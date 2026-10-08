@@ -198,7 +198,7 @@ const article = getArticleBySlug(params.get('post') || '') || (!params.get('post
 function jCard(a){
   return `
   <a href="${articleUrl(a)}" class="j-card">
-    <div class="j-media"><div style="background-image:url('${encodeURI(a.img)}');background-size:cover;background-position:center"></div></div>
+    <div class="j-media"><div style="background-image:url('${encodeURI(a.img)}');background-size:contain;background-repeat:no-repeat;background-position:center"></div></div>
     <div class="j-cat">${escHtml(a.cat)}</div>
     <h3>${escHtml(a.title)}</h3>
     <div class="j-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
