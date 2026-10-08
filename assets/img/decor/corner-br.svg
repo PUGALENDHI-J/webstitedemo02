@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" fill="none">
+  <defs>
+    <linearGradient id="almondG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D6A268"/>
+      <stop offset="1" stop-color="#8A5A30"/>
+    </linearGradient>
+    <linearGradient id="cashewG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0DDB0"/>
+      <stop offset="1" stop-color="#CBA066"/>
+    </linearGradient>
+    <linearGradient id="leafG2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9BA968"/>
+      <stop offset="1" stop-color="#5C6838"/>
+    </linearGradient>
+    <radialGradient id="fadeMaskBR" cx="1" cy="1" r="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.72" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <mask id="mBR">
+      <rect width="360" height="320" fill="url(#fadeMaskBR)"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#mBR)">
+    <!-- almonds: pointed-oval nut shape, laid mostly upright so the shape reads clearly -->
+    <g stroke="#5C371C" stroke-width="0.7" stroke-linejoin="round">
+      <path d="M298 236c-6-16 3-32 16-34 13-2 22 12 21 29-1 15-11 28-20 33-9-4-15-14-17-28Z" fill="url(#almondG)" transform="rotate(14 314 260)"/>
+      <path d="M298 236c-6-16 3-32 16-34 13-2 22 12 21 29-1 15-11 28-20 33-9-4-15-14-17-28Z" fill="url(#almondG)" transform="translate(38,20) rotate(-16 314 260)"/>
+      <path d="M298 236c-5-14 3-28 14-30 11-2 19 10 18 25-1 13-9 24-17 28-8-3-13-12-15-23Z" fill="url(#almondG)" transform="translate(8,54) rotate(30 310 258)"/>
+      <path d="M298 236c-5-14 3-28 14-30 11-2 19 10 18 25-1 13-9 24-17 28-8-3-13-12-15-23Z" fill="url(#almondG)" transform="translate(60,58) rotate(-6 310 258)"/>
+    </g>
+    <!-- almond centre-seam highlight for readability -->
+    <g stroke="#F4D9A8" stroke-width="0.7" opacity="0.5" stroke-linecap="round">
+      <path d="M310 214v52" transform="rotate(14 314 260)"/>
+      <path d="M310 214v52" transform="translate(38,20) rotate(-16 314 260)"/>
+    </g>
+
+    <!-- cashews: curved kidney shape -->
+    <g stroke="#8A6A3A" stroke-width="0.7" stroke-linejoin="round">
+      <path d="M244 292c-8-10-6-24 4-30 8-5 17-1 20 8 2 7-1 13-7 15 6 1 11 7 10 15-1 10-11 16-20 12-4-2-6-6-7-10-2 4-6 6-10 4-4-2-5-8-2-13-4 1-9-1-11-5-2-5 0-11 5-13 5-2 11 0 14 4 1 5 1 9 4 13Z" fill="url(#cashewG)"/>
+      <path d="M266 240c-6-8-5-19 3-24 6-4 13-1 15 6 2 5-1 10-5 12 5 1 9 6 8 12-1 8-9 13-16 10-3-2-5-5-6-8-1 3-5 5-8 3-3-2-4-6-2-10-3 1-7-1-9-4-1-4 0-9 4-11 4-2 9 0 11 3 1 4 1 7 5 11Z" fill="url(#cashewG)" transform="translate(48,58) scale(0.85) rotate(20 274 252)"/>
+    </g>
+
+    <!-- leaves -->
+    <g transform="translate(300,204) rotate(18)">
+      <path d="M40 2c22 14 34 38 28 70-26-2-46-18-52-42C10 16 24 6 40 2Z" fill="url(#leafG2)" stroke="#4B5A28" stroke-width="1"/>
+      <path d="M40 2v70" stroke="#4B5A28" stroke-width="0.8"/>
+    </g>
+    <g transform="translate(336,178) rotate(-8) scale(0.72)">
+      <path d="M40 2c22 14 34 38 28 70-26-2-46-18-52-42C10 16 24 6 40 2Z" fill="#7C8A4C" stroke="#4B5A28" stroke-width="1"/>
+      <path d="M40 2v70" stroke="#4B5A28" stroke-width="0.8"/>
+    </g>
+    <g transform="translate(236,254) rotate(30) scale(0.5)">
+      <path d="M40 2c22 14 34 38 28 70-26-2-46-18-52-42C10 16 24 6 40 2Z" fill="#96A35C" stroke="#4B5A28" stroke-width="1"/>
+    </g>
+
+    <!-- gold particles -->
+    <circle cx="290" cy="150" r="1.6" fill="#F6C87A" opacity="0.7"/>
+    <circle cx="250" cy="120" r="1.2" fill="#F6C87A" opacity="0.5"/>
+    <circle cx="320" cy="100" r="1" fill="#F6C87A" opacity="0.4"/>
+  </g>
+</svg>

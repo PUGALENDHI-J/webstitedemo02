@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" fill="none">
+  <defs>
+    <linearGradient id="grainG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D9A15C"/>
+      <stop offset="1" stop-color="#8A5A2E"/>
+    </linearGradient>
+    <linearGradient id="leafG1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9BA968"/>
+      <stop offset="1" stop-color="#5C6838"/>
+    </linearGradient>
+    <radialGradient id="fadeMaskBL" cx="0" cy="1" r="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.72" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </radialGradient>
+    <mask id="mBL">
+      <rect width="360" height="320" fill="url(#fadeMaskBL)"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#mBL)">
+    <!-- wheat / grain spikes -->
+    <g transform="translate(46,300) rotate(-18)">
+      <line x1="0" y1="0" x2="0" y2="-150" stroke="#B4863F" stroke-width="2"/>
+      <g fill="url(#grainG)">
+        <ellipse cx="-8" cy="-20" rx="7" ry="12" transform="rotate(-25 -8 -20)"/>
+        <ellipse cx="8" cy="-32" rx="7" ry="12" transform="rotate(25 8 -32)"/>
+        <ellipse cx="-9" cy="-46" rx="7" ry="12" transform="rotate(-25 -9 -46)"/>
+        <ellipse cx="9" cy="-58" rx="7" ry="12" transform="rotate(25 9 -58)"/>
+        <ellipse cx="-8" cy="-72" rx="6.5" ry="11" transform="rotate(-25 -8 -72)"/>
+        <ellipse cx="8" cy="-84" rx="6.5" ry="11" transform="rotate(25 8 -84)"/>
+        <ellipse cx="-7" cy="-97" rx="6" ry="10" transform="rotate(-25 -7 -97)"/>
+        <ellipse cx="7" cy="-108" rx="6" ry="10" transform="rotate(25 7 -108)"/>
+        <ellipse cx="0" cy="-122" rx="5.5" ry="10" transform="rotate(0 0 -122)"/>
+      </g>
+    </g>
+    <g transform="translate(88,308) rotate(-8)">
+      <line x1="0" y1="0" x2="0" y2="-130" stroke="#B4863F" stroke-width="2"/>
+      <g fill="url(#grainG)">
+        <ellipse cx="-7" cy="-18" rx="6" ry="10" transform="rotate(-25 -7 -18)"/>
+        <ellipse cx="7" cy="-28" rx="6" ry="10" transform="rotate(25 7 -28)"/>
+        <ellipse cx="-7" cy="-40" rx="6" ry="10" transform="rotate(-25 -7 -40)"/>
+        <ellipse cx="7" cy="-50" rx="6" ry="10" transform="rotate(25 7 -50)"/>
+        <ellipse cx="-6" cy="-62" rx="5.5" ry="9" transform="rotate(-25 -6 -62)"/>
+        <ellipse cx="6" cy="-72" rx="5.5" ry="9" transform="rotate(25 6 -72)"/>
+        <ellipse cx="0" cy="-84" rx="5" ry="9"/>
+      </g>
+    </g>
+
+    <!-- scattered seeds -->
+    <g fill="#C98A46">
+      <ellipse cx="140" cy="272" rx="6" ry="4" transform="rotate(20 140 272)"/>
+      <ellipse cx="160" cy="290" rx="5.5" ry="3.6" transform="rotate(-10 160 290)"/>
+      <ellipse cx="120" cy="292" rx="5" ry="3.4" transform="rotate(35 120 292)"/>
+      <ellipse cx="182" cy="270" rx="5" ry="3.2" transform="rotate(-30 182 270)"/>
+      <ellipse cx="200" cy="292" rx="4.5" ry="3" transform="rotate(15 200 292)"/>
+    </g>
+    <g fill="#E9C58A">
+      <circle cx="150" cy="256" r="2.6"/>
+      <circle cx="170" cy="266" r="2.2"/>
+      <circle cx="130" cy="264" r="2"/>
+      <circle cx="192" cy="256" r="2.4"/>
+    </g>
+
+    <!-- leaf sprig -->
+    <g transform="translate(22,244) rotate(-12)">
+      <path d="M40 2c22 14 34 38 28 70-26-2-46-18-52-42C10 16 24 6 40 2Z" fill="url(#leafG1)" stroke="#4B5A28" stroke-width="1"/>
+      <path d="M40 2v70" stroke="#4B5A28" stroke-width="0.8"/>
+    </g>
+    <g transform="translate(4,206) rotate(6) scale(0.7)">
+      <path d="M40 2c22 14 34 38 28 70-26-2-46-18-52-42C10 16 24 6 40 2Z" fill="#7C8A4C" stroke="#4B5A28" stroke-width="1"/>
+      <path d="M40 2v70" stroke="#4B5A28" stroke-width="0.8"/>
+    </g>
+
+    <!-- gold particles -->
+    <circle cx="60" cy="150" r="1.6" fill="#F6C87A" opacity="0.7"/>
+    <circle cx="110" cy="120" r="1.2" fill="#F6C87A" opacity="0.55"/>
+    <circle cx="30" cy="90" r="1" fill="#F6C87A" opacity="0.4"/>
+  </g>
+</svg>

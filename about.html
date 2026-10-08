@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Our Story — Skyrah Impex</title>
+<meta name="description" content="Skyrah Impex Private Limited is an import and export company in Pollachi, Tamil Nadu, taking natural Indian produce from Indian soil to the world." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Yellowtail&family=Playfair+Display:wght@600;700;800&family=Work+Sans:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="assets/img/favicon-16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<nav class="nav scrolled" id="mainNav">
+  <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="Skyrah Impex" class="logo-img"><span class="logo-text">Skyrah <span class="logo-accent">Impex</span></span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button type="button" class="search-toggle" id="searchToggle" aria-label="Search">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    <a href="shop.html" aria-label="Cart">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="mobile-drawer-header">
+    <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="Skyrah Impex" class="logo-img"><span class="logo-text">Skyrah <span class="logo-accent">Impex</span></span></a>
+    <button class="mobile-drawer-close" id="mobileDrawerClose" type="button" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4 4 20"/></svg>
+    </button>
+  </div>
+
+  <p class="mobile-drawer-tagline">From Indian soil<br>to global soul <span aria-hidden="true">♡</span></p>
+
+  <nav class="mobile-drawer-nav" aria-label="Mobile">
+    <a href="index.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 9.5V19a1 1 0 0 0 1 1h3v-5h4v5h3a1 1 0 0 0 1-1V9.5"/></svg></span>
+      <span class="mdn-label">Home</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="shop.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
+      <span class="mdn-label">Shop</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="about.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-9 0-16 6-16 15 9 0 15-6 16-15Z"/><path d="M9 15c2-3 5-6 10-9"/></svg></span>
+      <span class="mdn-label">Our Story</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="journal.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5c-1.6-1.3-3.6-2-6.5-2A1.5 1.5 0 0 0 4 6v11.5c0 .5.4.9.9.8 2.6-.4 4.6.2 6.1 1.4V6.5Z"/><path d="M12 6.5c1.6-1.3 3.6-2 6.5-2A1.5 1.5 0 0 1 20 6v11.5c0 .5-.4.9-.9.8-2.6-.4-4.6.2-6.1 1.4V6.5Z"/></svg></span>
+      <span class="mdn-label">Journal</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="contact.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 12.3c.9 1.8 2.4 3.3 4.2 4.2l1.3-1.3c.2-.2.5-.3.7-.2.8.3 1.6.4 2.4.4.4 0 .7.3.7.7v2c0 .4-.3.7-.7.7C10.9 18.8 6 13.9 6 7.7c0-.4.3-.7.7-.7h2c.4 0 .7.3.7.7 0 .8.1 1.6.4 2.4.1.3 0 .5-.2.7L8.4 12.3Z" fill="currentColor" stroke="none"/><path d="M14.2 8.3c1 .35 1.75 1.15 2.1 2.15"/><path d="M15.3 5.6c1.9.6 3.4 2.15 4 4.05"/></svg></span>
+      <span class="mdn-label">Contact</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+  </nav>
+
+  <div class="mobile-drawer-promo">
+    <span class="mdp-leaf" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9c0-3.5 2.5-6 6-6-.3 3.8-2.8 6-6 6Z"/><path d="M12 13c0-2.8-2-5-5-5 .3 3 2.3 5 5 5Z"/></svg></span>
+    <p>Natural Indian produce<br>packed for the world</p>
+  </div>
+
+  <div class="mobile-drawer-social">
+    <a href="#" data-social="instagram" aria-label="Instagram" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+    <a href="#" data-social="facebook" aria-label="Facebook" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+    <a href="#" data-social="linkedin" aria-label="LinkedIn" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+    <a href="#" data-social="youtube" aria-label="YouTube" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10.5 9.7 4 2.3-4 2.3Z" fill="currentColor" stroke="none"/></svg></a>
+    <a href="https://wa.me/919566348350" data-site-href="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+  </div>
+
+  <div class="mobile-drawer-footer" aria-hidden="true">
+    <div class="mdf-shape"></div>
+    <img class="mdf-photo" src="assets/img/decor/mdf-basket-photo.png" alt="" loading="lazy">
+    <div class="mdf-words"><span>Natural</span><span>Sustainable</span><span>Mindful</span></div>
+  </div>
+</aside>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="bg"><img src="assets/img/about-hero.jpg" alt="Our story begins" class="fit-contain" /></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Our Story</span></div>
+    <h1 class="reveal">Rooted In<br>Tradition.</h1>
+    <p class="reveal">Skyrah Impex Private Limited is an import and export company from Pollachi, Tamil Nadu — taking the natural produce of India from Indian soil to the world.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="wrap">
+    <div class="intro-text">
+      <div class="mask-line"><span>From Indian soil</span></div>
+      <div class="mask-line"><span>to global soul.</span></div>
+    </div>
+    <p class="intro-note reveal">India grows some of the most fragrant spices and flavourful produce in the world. Skyrah Impex exists to carry that flavour — whole, ground, dried or brewed — to kitchens, cafés and food businesses wherever they are.</p>
+  </div>
+</section>
+
+<!-- STORY SPLIT 1 -->
+<section class="story">
+  <div class="story-media">
+    <div class="clip" id="storyClip1">
+      <img src="assets/img/about-brand.jpg" alt="Skyrah Impex logo — From Indian soil to global soul" />
+      <div class="tag">POLLACHI, TAMIL NADU</div>
+    </div>
+  </div>
+  <div class="story-copy">
+    <div class="eyebrow reveal">Who We Are</div>
+    <h2 class="reveal">An import &amp; export house.<br>Rooted in Pollachi.</h2>
+    <p class="reveal">Skyrah Impex Private Limited is based in Pollachi, at the foot of the Anamalai hills in Tamil Nadu. Led by our <span data-site="directorTitle">Director</span>, <span data-site="director">Ramesh Balakrishnan</span>, we supply whole spices, spice powders, dehydrated vegetables, fruit powders and herbal infusions — in retail packs for homes, and in bulk for businesses in India and abroad.</p>
+  </div>
+</section>
+
+<!-- STORY SPLIT 2 (reversed) -->
+<section class="story story-reverse">
+  <div class="story-copy">
+    <div class="eyebrow reveal">How We Prepare</div>
+    <h2 class="reveal">Indian farms.<br>Careful hands.</h2>
+    <p class="reveal">Our spices, vegetables, fruits, leaves and flowers come from Indian farms. They are cleaned, dried and milled with care, then sealed in resealable packs that protect their colour, aroma and flavour — so what reaches you tastes the way it should.</p>
+  </div>
+  <div class="story-media">
+    <div class="clip" id="storyClip2">
+      <img src="assets/img/about-farmers.jpg" alt="A farmer harvesting fresh greens by hand in a lush field" />
+      <div class="tag">FIELD TO PACK</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-strip">
+  <div class="stat reveal"><div class="s-val">100%</div><div class="s-label">Natural Produce</div></div>
+  <div class="stat reveal"><div class="s-val" data-site="productCount">12</div><div class="s-label">Products</div></div>
+  <div class="stat reveal"><div class="s-val" data-site="categoryCount">5</div><div class="s-label">Product Ranges</div></div>
+  <div class="stat reveal"><div class="s-val">Global</div><div class="s-label">Import &amp; Export</div></div>
+</section>
+
+<!-- VALUES -->
+<section class="about-values">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">What We<br>Stand For</h2>
+      <p class="reveal">Six commitments behind every pack we send out.</p>
+    </div>
+    <div class="hex-hive reveal" id="hexHive">
+      <div class="hex-row">
+        <div class="hex-item" style="--hex-c:var(--turmeric)">
+          <div class="hex-clip">
+            <div class="hex-face hex-face-photo">
+              <img src="assets/img/products/hibiscus-infusion.jpg" alt="Natural Produce" loading="lazy">
+              <span class="hex-tag">Natural Produce</span>
+            </div>
+            <div class="hex-overlay-bg"></div>
+          </div>
+          <div class="hex-face hex-face-info">
+            <h3>Natural Produce</h3>
+            <p>Real Indian spices, vegetables, fruits, leaves and flowers — simply dried and packed.</p>
+          </div>
+        </div>
+        <div class="hex-item" style="--hex-c:#E1592E">
+          <div class="hex-clip">
+            <div class="hex-face hex-face-photo">
+              <img src="assets/img/products/tomato-powder.jpg" alt="Carefully Dried" loading="lazy">
+              <span class="hex-tag">Carefully Dried</span>
+            </div>
+            <div class="hex-overlay-bg"></div>
+          </div>
+          <div class="hex-face hex-face-info">
+            <h3>Carefully Dried</h3>
+            <p>Dried and milled to keep natural colour, aroma and flavour.</p>
+          </div>
+        </div>
+        <div class="hex-item" style="--hex-c:#5C6B23">
+          <div class="hex-clip">
+            <div class="hex-face hex-face-photo">
+              <img src="assets/img/products/moringa-powder.jpg" alt="Sealed Fresh" loading="lazy">
+              <span class="hex-tag">Sealed Fresh</span>
+            </div>
+            <div class="hex-overlay-bg"></div>
+          </div>
+          <div class="hex-face hex-face-info">
+            <h3>Sealed Fresh</h3>
+            <p>Resealable packs with a window, so you can see exactly what you buy.</p>
+          </div>
+        </div>
+        <div class="hex-item" style="--hex-c:#15877F">
+          <div class="hex-clip">
+            <div class="hex-face hex-face-photo">
+              <img src="assets/img/products/nutmeg-powder.jpg" alt="Honest Labelling" loading="lazy">
+              <span class="hex-tag">Honest Labelling</span>
+            </div>
+            <div class="hex-overlay-bg"></div>
+          </div>
+          <div class="hex-face hex-face-info">
+            <h3>Honest Labelling</h3>
+            <p>Clear product names and details on every pack.</p>
+          </div>
+        </div>
+        <div class="hex-item" style="--hex-c:var(--clay)">
+          <div class="hex-clip">
+            <div class="hex-face hex-face-photo">
+              <img src="assets/img/products/dehydrated-okra.jpg" alt="Retail To Export" loading="lazy">
+              <span class="hex-tag">Retail To Export</span>
+            </div>
+            <div class="hex-overlay-bg"></div>
+          </div>
+          <div class="hex-face hex-face-info">
+            <h3>Retail To Export</h3>
+            <p>From a single pack for your kitchen to bulk orders for your business.</p>
+          </div>
+        </div>
+        <div class="hex-item" style="--hex-c:var(--ink)">
+          <div class="hex-clip">
+            <div class="hex-face hex-face-photo">
+              <img src="assets/img/products/spice-tea.jpg" alt="Real Conversations" loading="lazy">
+              <span class="hex-tag">Real Conversations</span>
+            </div>
+            <div class="hex-overlay-bg"></div>
+          </div>
+          <div class="hex-face hex-face-info">
+            <h3>Real Conversations</h3>
+            <p>Real people on WhatsApp, phone and email — not a call centre.</p>
+          </div>
+        </div>
+      </div>
+      <p class="slider-hint hex-hint">Hover a hexagon</p>
+    </div>
+  </div>
+</section>
+
+<!-- OUR JOURNEY (animated train) -->
+<style>
+  .journey{
+    --bg: #1B0E06;
+    --bg-2: #170B05;
+    --text: #F7F0E8;
+    --text-dim: #C9B49A;
+    --gold: #D99132;
+    --lavender: #DCD2F1;
+    --lavender-dk: #B9A9DE;
+    --peach: #F2D7B9;
+    --peach-dk: #E2B47E;
+    --sage: #D9E2C8;
+    --sage-dk: #B8C79E;
+    --bronze: #7A4A28;
+    --bronze-lt: #C08A4E;
+    --brown: #2B160B;
+    --ink: #3A2317;
+
+    --wheel-r: 27px;            /* shared wheel baseline radius, keeps loco + carriage wheels on one rail line */
+    /* --carriage-w / --loco-w removed: the locomotive + 5 carriages now share
+       the available track width via flex-basis so the complete train always
+       fits inside .journey-track-outer without overflow (see .journey-train,
+       .locomotive, .journey-carriage below). */
+  }
+
+
+  .journey{
+    position: relative;
+    width: 100%;
+    background:
+      radial-gradient(ellipse 90% 55% at 50% 0%, rgba(217,145,50,0.07), transparent 60%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+    overflow: hidden;
+    font-family: 'Cormorant Garamond','Iowan Old Style','Georgia',serif;
+    color: var(--text);
+  }
+
+  .journey *{ font-family: inherit; }
+
+  /* ---------- Header ---------- */
+  .journey-header{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 72px 24px 58px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .journey-eyebrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-family: 'Inter','Helvetica Neue',Arial,sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.26em;
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+  .journey-eyebrow .line{
+    width: 42px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold));
+  }
+  .journey-eyebrow .line.right{ background: linear-gradient(90deg, var(--gold), transparent); }
+  .journey-eyebrow .diamond{
+    width: 6px; height: 6px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    flex: none;
+  }
+
+  .journey-heading{
+    font-size: clamp(32px, 5vw, 58px);
+    font-weight: 600;
+    line-height: 1.12;
+    color: var(--text);
+    margin: 0 0 18px;
+    letter-spacing: 0.005em;
+  }
+
+  .journey-sub{
+    font-family: 'Inter','Helvetica Neue',Arial,sans-serif;
+    font-size: 16.5px;
+    line-height: 1.62;
+    color: var(--text-dim);
+    max-width: 620px;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+
+  /* ---------- Stage ---------- */
+  .journey-scroll-wrap{
+    position: relative;
+  }
+
+  .journey-stage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 64px;
+  }
+
+  /* ---------- Track wrapper ---------- */
+  .journey-track-outer{
+    position: relative;
+    max-width: 1500px; /* a bit wider than before so the 6 flex units aren't
+                          needlessly small on large desktop monitors */
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden; /* clip the train while it eases into its resting position */
+  }
+
+  .journey-rail{
+    position: relative;
+    padding-top: 118px; /* room for year badges */
+    padding-bottom: 8px;
+  }
+
+  /* the train itself: locomotive + carriages, moved as one unit.
+     width:100% + flex-basis:0 children means the locomotive and every
+     carriage share out the available track width between them, so the
+     WHOLE train (loco + 5 carriages) always fits inside one frame
+     instead of relying on fixed pixel widths that overflow the frame. */
+  .journey-train{
+    display: flex;
+    align-items: flex-end;
+    gap: 0;
+    width: 100%;
+    position: relative;
+    will-change: transform;
+  }
+
+  /* subtle vibration is applied via JS (combined into the same transform as
+     the horizontal position) so it never fights with the positioning transform */
+
+  /* ---------- Locomotive ---------- */
+  .locomotive{
+    /* slightly larger flex-basis than a carriage (328:322 in the original
+       fixed-width design) so proportions stay the same as the train shrinks */
+    flex: 1.02 1 0;
+    min-width: 0;
+    position: relative;
+    padding-bottom: 8px; /* visual clearance so wheel base sits exactly on rail like carriages */
+  }
+  .locomotive svg{ width: 100%; height: auto; display:block; overflow: visible; }
+
+  .steam{
+    position: absolute;
+    left: 18px;
+    top: -58px;
+    width: 150px;
+    height: 150px;
+    pointer-events: none;
+  }
+  .steam span{
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, rgba(247,240,232,0.9), rgba(247,240,232,0.06) 70%);
+    filter: blur(0.5px);
+    opacity: 0;
+    animation: steam-rise 5.5s ease-in infinite;
+  }
+  .steam span:nth-child(1){ width:24px; height:24px; left:86px; top:104px; animation-delay:0s;}
+  .steam span:nth-child(2){ width:32px; height:32px; left:66px; top:84px; animation-delay:1.1s;}
+  .steam span:nth-child(3){ width:42px; height:42px; left:42px; top:60px; animation-delay:2.2s;}
+  .steam span:nth-child(4){ width:52px; height:52px; left:14px; top:32px; animation-delay:3.3s;}
+  .steam span:nth-child(5){ width:32px; height:32px; left:72px; top:48px; animation-delay:4.4s;}
+
+  @keyframes steam-rise{
+    0%{ opacity:0; transform: translate(0,0) scale(0.55); }
+    12%{ opacity:0.75; }
+    100%{ opacity:0; transform: translate(-50px,-118px) scale(1.7); }
+  }
+
+  /* ---------- Carriage ---------- */
+  .journey-carriage{
+    flex: 1 1 0;
+    min-width: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4px;
+    /* establishes a query container so the card's own font-size, padding,
+       icon and wheel sizing can respond to ITS actual rendered width
+       (cqw/cqi) rather than the viewport — this keeps content readable
+       and non-overflowing at any train width, on any screen size. */
+    container-type: inline-size;
+    container-name: carriage;
+  }
+
+  .badge-wrap{
+    position: absolute;
+    top: -118px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .badge{
+    width: clamp(46px, 25cqw, 82px);
+    height: clamp(46px, 25cqw, 82px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+    font-size: clamp(11px, 5.4cqw, 17px);
+    color: var(--ink);
+    border: 1px solid rgba(255,255,255,0.55);
+    box-shadow:
+      0 10px 20px rgba(0,0,0,0.42),
+      inset 0 2px 3px rgba(255,255,255,0.6),
+      inset 0 -6px 10px rgba(0,0,0,0.08);
+  }
+  .badge.lavender{ background: linear-gradient(160deg, #EDE6F8, var(--lavender) 60%, var(--lavender-dk)); }
+  .badge.peach{ background: linear-gradient(160deg, #FCEEDD, var(--peach) 60%, var(--peach-dk)); }
+  .badge.sage{ background: linear-gradient(160deg, #ECF2E1, var(--sage) 60%, var(--sage-dk)); }
+
+  .dotted-connector{
+    width: 1px;
+    height: 32px;
+    border-left: 2px dotted rgba(247,240,232,0.4);
+    margin-top: 4px;
+  }
+
+  .carriage-body{
+    position: relative;
+    width: 100%;
+    min-height: clamp(190px, 94cqw, 302px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 20px 8px 8px;
+    padding: clamp(14px, 9cqw, 28px) clamp(10px, 7.5cqw, 24px) clamp(10px, 7cqw, 22px);
+    text-align: center;
+    border: 1.5px solid var(--bronze);
+    box-shadow:
+      0 20px 34px rgba(0,0,0,0.38),
+      inset 0 2px 2px rgba(255,255,255,0.35),
+      inset 0 -28px 38px rgba(0,0,0,0.07);
+  }
+  .carriage-body::before{ /* top bronze trim */
+    content:"";
+    position: absolute;
+    top: -1.5px; left: -1.5px; right: -1.5px;
+    height: 13px;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(180deg, var(--bronze-lt), var(--bronze));
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+  .carriage-body::after{ /* bottom bronze trim */
+    content:"";
+    position: absolute;
+    bottom: -1.5px; left: -1.5px; right: -1.5px;
+    height: 11px;
+    border-radius: 0 0 8px 8px;
+    background: linear-gradient(0deg, var(--bronze-lt), var(--bronze));
+  }
+
+  .carriage-body.lavender{ background: linear-gradient(165deg, #EFE9FA, var(--lavender) 45%, #CFC2E9); }
+  .carriage-body.peach{ background: linear-gradient(165deg, #FBF0E0, var(--peach) 45%, #E7C29A); }
+  .carriage-body.sage{ background: linear-gradient(165deg, #EEF3E5, var(--sage) 45%, #C9D6B3); }
+
+  .carriage-icon{
+    width: clamp(34px, 17cqw, 54px);
+    height: clamp(34px, 17cqw, 54px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px auto clamp(8px, 5cqw, 16px);
+    flex: none;
+    box-shadow: inset 0 2px 4px rgba(255,255,255,0.5), inset 0 -4px 8px rgba(0,0,0,0.08);
+  }
+  .carriage-icon.lavender{ background: linear-gradient(160deg,#fff,var(--lavender)); }
+  .carriage-icon.peach{ background: linear-gradient(160deg,#fff,var(--peach)); }
+  .carriage-icon.sage{ background: linear-gradient(160deg,#fff,var(--sage)); }
+  .carriage-icon svg{ width: 58%; height: 58%; }
+
+  .carriage-title{
+    font-size: clamp(11.5px, 6.5cqw, 21px);
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 clamp(5px, 3cqw, 10px);
+    letter-spacing: 0.01em;
+    min-height: clamp(30px, 16cqw, 52px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.18;
+    flex: none;
+  }
+
+  .carriage-desc{
+    font-family: 'Inter','Helvetica Neue',Arial,sans-serif;
+    font-size: clamp(8.5px, 4.2cqw, 13.5px);
+    line-height: 1.5;
+    color: #5A4432;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  /* connecting couplers between carriages */
+  .journey-carriage::before{
+    content:"";
+    position: absolute;
+    left: -12px;
+    bottom: clamp(24px, 21cqw, 68px);
+    width: 12px;
+    height: 7px;
+    background: linear-gradient(180deg, var(--bronze-lt), var(--bronze));
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    z-index: 2;
+  }
+
+  /* ---------- Wheels ---------- */
+  .wheels{
+    display: flex;
+    justify-content: center;
+    gap: clamp(10px, 13cqw, 40px);
+    margin-top: clamp(8px, 5cqw, 16px);
+    position: relative;
+    z-index: 2;
+  }
+
+  /* sized off the carriage's own width (cqw) so the pair of wheels can
+     never grow wider than the carriage that holds them */
+  .wheel{ width: clamp(26px, 15cqw, 54px); height: clamp(26px, 15cqw, 54px); transform-origin: 50% 50%; }
+
+  /* ---------- Track (stationary, sits under the moving train) ---------- */
+  .railway-track{
+    position: absolute;
+    left: -400px; right: -400px;
+    bottom: 2px;
+    height: 30px;
+    z-index: 1;
+  }
+  .rail-bed{
+    position: absolute;
+    left:0; right:0; top: 12px;
+    height: 7px;
+    background: linear-gradient(180deg, var(--bronze), #4a2c17 60%, var(--brown));
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+  }
+  .rail-bed::before, .rail-bed::after{
+    content:"";
+    position: absolute;
+    left:0; right:0;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,215,160,0.5), rgba(255,215,160,0.15));
+  }
+  .rail-bed::before{ top: 0; }
+  .rail-bed::after{ bottom: 0; }
+  .sleepers{
+    position: absolute;
+    left:0; right:0; top: 0;
+    height: 30px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--bronze) 0px, var(--bronze) 9px,
+      transparent 9px, transparent 30px
+    );
+    opacity: 0.9;
+  }
+
+  .scroll-hint{
+    display: none;
+    text-align: center;
+    font-family: 'Inter',sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    margin-top: 14px;
+    text-transform: uppercase;
+  }
+
+  /* ---------- Entrance animation (header only; train handled by scroll JS) ---------- */
+  .journey [data-reveal="head"]{
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  .journey.is-visible [data-reveal="head"]{
+    animation: reveal-up 0.8s cubic-bezier(.2,.7,.3,1) forwards;
+  }
+
+  @keyframes reveal-up{
+    to{ opacity: 1; transform: translateY(0); }
+  }
+
+  /* =====================================================================
+     DESKTOP — train auto-plays its journey once it scrolls into view
+     ===================================================================== */
+  @media (min-width: 861px){
+    .journey-track-outer{ padding: 0 24px; }
+    .journey-train{ position: relative; }
+    .scroll-hint{ display: none !important; }
+  }
+
+  /* =====================================================================
+     TABLET (768px–860px) — same horizontal train as desktop, just at
+     the smaller flex-computed sizes (unchanged from before)
+     ===================================================================== */
+  @media (max-width: 860px){
+    .journey{ --wheel-r: 20px; }
+    .journey-header{ padding: 56px 20px 46px; }
+    .journey-track-outer{ padding-left: 14px; padding-right: 14px; }
+    .journey-rail{ padding-top: 104px; }
+    .badge-wrap{ top: -104px; }
+    .scroll-hint{ display: none; }
+  }
+
+  /* =====================================================================
+     MOBILE (below 768px) — SAME horizontal train as desktop/tablet, just
+     scaled down: locomotive + carriages stay in one single horizontal
+     row (never stacked). Because a phone viewport can't show the whole
+     train at once, the locomotive and carriages fall back to fixed
+     clamp()-based widths instead of the desktop flex-basis:0 "shrink to
+     fit" trick — the train becomes wider than the screen, and
+     .journey-track-outer's overflow:hidden simply clips whatever
+     doesn't fit, exactly like a real train frame cropping a photo.
+     The JS below detects this breakpoint and starts the whole
+     .journey-train one translate3d() further right so it visibly
+     glides in from off-screen on entry. Desktop/tablet (≥768px) above
+     are completely untouched by this block.
+     ===================================================================== */
+  @media (max-width: 767px){
+    .journey, .journey-header, .journey-track-outer, .journey-rail,
+    .journey-train, .journey-carriage, .locomotive, .carriage-body{
+      box-sizing: border-box;
+    }
+
+    .journey{ --wheel-r: 16px; }
+    .journey-header{ padding: 40px 20px 28px; }
+    .journey-heading{ font-size: clamp(26px, 7vw, 32px); margin-bottom: 10px; }
+    .journey-sub{ font-size: 14px; line-height: 1.55; }
+
+    /* clip horizontally only — never let a card get cropped vertically */
+    .journey-track-outer{ max-width: 100%; padding: 0 16px; overflow: hidden; }
+    .journey-rail{ padding-bottom: 4px; }
+
+    /* keep locomotive + every carriage in ONE horizontal row, never wrap */
+    .journey-train{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap !important;
+      align-items: flex-end;
+      width: max-content;
+      gap: 0;
+    }
+
+    .locomotive{
+      order: 0;                       /* stays first, same as desktop */
+      flex: 0 0 auto;
+      flex-shrink: 0 !important;
+      width: clamp(190px, 55vw, 232px);
+      margin: 0;
+    }
+    .steam{ left: 10%; }
+
+    .journey-carriage{
+      flex: 0 0 auto;
+      flex-shrink: 0 !important;
+      width: clamp(200px, 58vw, 240px);
+      max-width: none;
+    }
+    /* keep the bronze coupler between carriages (was hidden before) */
+    .journey-carriage::before{ display: block; }
+
+    /* badge-wrap stays absolutely positioned above its own carriage
+       (inherited from the ≤860px rule above) instead of the static/
+       stacked placement the old vertical layout used */
+
+    .railway-track{ left: 0; right: 0; width: 100%; height: 22px; }
+
+    .scroll-hint{ display: none !important; }
+  }
+
+  @media (max-width: 480px){
+    .journey-rail{ padding-top: 96px; }
+    .badge-wrap{ top: -96px; }
+    .locomotive{ width: clamp(150px, 50vw, 190px); }
+    .journey-carriage{ width: clamp(168px, 54vw, 205px); }
+  }
+
+  /* ---------- Reduced motion: show the finished journey, no scroll-jack ---------- */
+  @media (prefers-reduced-motion: reduce){
+    .journey-scroll-wrap{ height: auto !important; }
+    .journey-stage{ position: static !important; height: auto !important; overflow: visible !important; }
+    .journey-rail{ padding-bottom: 40px; }
+    .journey-train{ transform: none !important; }
+    .steam span{ animation: none; opacity: 0.3; }
+    .journey [data-reveal="head"]{ opacity: 1; transform: none; animation: none; }
+  }
+</style>
+<section class="journey" id="journeySection">
+  <div class="journey-header" data-reveal="head">
+    <div class="journey-eyebrow">
+      <span class="line"></span>
+      <span class="diamond"></span>
+      <span>Our Journey</span>
+      <span class="diamond"></span>
+      <span class="line right"></span>
+    </div>
+    <h2 class="journey-heading">From Soil to Soul, Mile by Mile</h2>
+    <p class="journey-sub">Every Skyrah Impex pack travels the same careful route — from Indian farms to kitchens around the world.</p>
+  </div>
+
+  <div class="journey-scroll-wrap" id="journeyScrollWrap">
+    <div class="journey-stage" id="journeyStage">
+      <div class="journey-track-outer">
+        <div class="journey-rail">
+
+          <div class="railway-track">
+            <div class="rail-bed"></div>
+            <div class="sleepers"></div>
+          </div>
+
+          <div class="journey-train" id="journeyTrain">
+
+            <!-- Locomotive -->
+            <div class="locomotive">
+              <div class="steam">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <svg viewBox="0 0 340 320" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#4a2c18"/>
+                    <stop offset="55%" stop-color="#2f1a0d"/>
+                    <stop offset="100%" stop-color="#190d06"/>
+                  </linearGradient>
+                  <linearGradient id="copperGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#e0a860"/>
+                    <stop offset="100%" stop-color="#8a5626"/>
+                  </linearGradient>
+                  <radialGradient id="boilerFace" cx="35%" cy="32%" r="72%">
+                    <stop offset="0%" stop-color="#5a3a20"/>
+                    <stop offset="100%" stop-color="#1c0e05"/>
+                  </radialGradient>
+                </defs>
+
+                <!-- cowcatcher (front, leading edge) -->
+                <path d="M4 262 L46 196 L74 196 L52 262 Z" fill="url(#bodyGrad)" stroke="#100804" stroke-width="1.5"/>
+                <path d="M12 254 L44 206" stroke="#8a5626" stroke-width="2.5" opacity="0.6"/>
+                <path d="M22 254 L48 210" stroke="#8a5626" stroke-width="2.5" opacity="0.5"/>
+
+                <!-- chimney -->
+                <rect x="42" y="36" width="30" height="70" rx="5" fill="url(#bodyGrad)" stroke="#100804" stroke-width="1.5"/>
+                <rect x="35" y="30" width="44" height="15" rx="3" fill="url(#copperGrad)"/>
+
+                <!-- steam / sand dome -->
+                <rect x="95" y="58" width="34" height="30" rx="11" fill="url(#copperGrad)" stroke="#4a2c15" stroke-width="1"/>
+
+                <!-- boiler barrel -->
+                <rect x="60" y="112" width="220" height="92" rx="28" fill="url(#bodyGrad)" stroke="#100804" stroke-width="2"/>
+                <rect x="60" y="112" width="220" height="13" rx="6" fill="rgba(255,255,255,0.08)"/>
+
+                <!-- large circular smokebox face -->
+                <circle cx="128" cy="150" r="58" fill="url(#boilerFace)" stroke="#100804" stroke-width="2.5"/>
+                <circle cx="128" cy="150" r="44" fill="none" stroke="url(#copperGrad)" stroke-width="5.5"/>
+                <circle cx="128" cy="150" r="12" fill="url(#copperGrad)"/>
+
+                <!-- Skyrah Impex plate -->
+                <rect x="150" y="168" width="112" height="28" rx="4" fill="#1c0f07" stroke="url(#copperGrad)" stroke-width="1.5"/>
+                <text x="206" y="187" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e6c99a" letter-spacing="0.5">Skyrah Impex</text>
+
+                <!-- cab -->
+                <path d="M256 44 L328 44 L328 214 L242 214 L242 84 Z" fill="url(#bodyGrad)" stroke="#100804" stroke-width="2"/>
+                <rect x="256" y="58" width="60" height="52" rx="5" fill="#0d0704" stroke="url(#copperGrad)" stroke-width="2.5"/>
+                <ellipse cx="286" cy="84" rx="20" ry="19" fill="#3a5a52" opacity="0.55"/>
+                <circle cx="279" cy="76" r="7" fill="#e8d3ae" opacity="0.85"/>
+
+                <!-- running board -->
+                <rect x="4" y="214" width="330" height="11" fill="url(#copperGrad)" opacity="0.85"/>
+
+                <!-- wheels: small leading wheel + two large driving wheels (rotated by JS via transform attribute) -->
+                <g class="loco-wheel" data-cx="82" data-cy="272">
+                  <circle cx="82" cy="272" r="26" fill="url(#bodyGrad)" stroke="#100804" stroke-width="2.5"/>
+                  <circle cx="82" cy="272" r="15" fill="none" stroke="url(#copperGrad)" stroke-width="4.5"/>
+                  <circle cx="82" cy="272" r="5" fill="url(#copperGrad)"/>
+                  <line x1="82" y1="250" x2="82" y2="294" stroke="url(#copperGrad)" stroke-width="3"/>
+                  <line x1="60" y1="272" x2="104" y2="272" stroke="url(#copperGrad)" stroke-width="3"/>
+                </g>
+                <g class="loco-wheel" data-cx="168" data-cy="272">
+                  <circle cx="168" cy="272" r="36" fill="url(#bodyGrad)" stroke="#100804" stroke-width="2.5"/>
+                  <circle cx="168" cy="272" r="22" fill="none" stroke="url(#copperGrad)" stroke-width="6"/>
+                  <circle cx="168" cy="272" r="6.5" fill="url(#copperGrad)"/>
+                  <line x1="168" y1="242" x2="168" y2="302" stroke="url(#copperGrad)" stroke-width="3.5"/>
+                  <line x1="138" y1="272" x2="198" y2="272" stroke="url(#copperGrad)" stroke-width="3.5"/>
+                </g>
+                <g class="loco-wheel" data-cx="262" data-cy="272">
+                  <circle cx="262" cy="272" r="36" fill="url(#bodyGrad)" stroke="#100804" stroke-width="2.5"/>
+                  <circle cx="262" cy="272" r="22" fill="none" stroke="url(#copperGrad)" stroke-width="6"/>
+                  <circle cx="262" cy="272" r="6.5" fill="url(#copperGrad)"/>
+                  <line x1="262" y1="242" x2="262" y2="302" stroke="url(#copperGrad)" stroke-width="3.5"/>
+                  <line x1="232" y1="272" x2="292" y2="272" stroke="url(#copperGrad)" stroke-width="3.5"/>
+                </g>
+                <!-- connecting rod -->
+                <rect x="82" y="266" width="180" height="9" rx="4" fill="url(#copperGrad)" opacity="0.9"/>
+              </svg>
+            </div>
+
+            <!-- Carriage 01 -->
+            <div class="journey-carriage" data-reveal="c1">
+              <div class="badge-wrap">
+                <div class="badge lavender">01</div>
+                <div class="dotted-connector"></div>
+              </div>
+              <div class="carriage-body lavender">
+                <div class="carriage-icon lavender">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#6b5230" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 12h16a1 1 0 0 1 1 1v1a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5v-1a1 1 0 0 1 1-1Z"/>
+                    <path d="M9 12V8a3 3 0 0 1 6 0v4"/>
+                    <path d="M2 12h20"/>
+                  </svg>
+                </div>
+                <h3 class="carriage-title">Sourced</h3>
+                <p class="carriage-desc">Spices, vegetables, fruits, leaves and flowers are gathered from Indian farms.</p>
+              </div>
+              <div class="wheels">
+                <svg class="wheel" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#2f1a0d" stroke="#100804" stroke-width="2"/><circle cx="30" cy="30" r="16" fill="none" stroke="#c08a4e" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#c08a4e"/><line x1="30" y1="10" x2="30" y2="50" stroke="#c08a4e" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#c08a4e" stroke-width="2"/></svg>
+                <svg class="wheel" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#2f1a0d" stroke="#100804" stroke-width="2"/><circle cx="30" cy="30" r="16" fill="none" stroke="#c08a4e" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#c08a4e"/><line x1="30" y1="10" x2="30" y2="50" stroke="#c08a4e" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#c08a4e" stroke-width="2"/></svg>
+              </div>
+            </div>
+
+            <!-- Carriage 02 -->
+            <div class="journey-carriage" data-reveal="c2">
+              <div class="badge-wrap">
+                <div class="badge peach">02</div>
+                <div class="dotted-connector"></div>
+              </div>
+              <div class="carriage-body peach">
+                <div class="carriage-icon peach">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#7a4d24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22V12"/>
+                    <path d="M12 12C12 7 8 4 4 4c0 5 3.5 8 8 8Z"/>
+                    <path d="M12 12c0-4 3-7 8-7 0 4.5-3 7.5-8 7Z"/>
+                  </svg>
+                </div>
+                <h3 class="carriage-title">Cleaned &amp; Sorted</h3>
+                <p class="carriage-desc">Every lot is cleaned and sorted before it moves on.</p>
+              </div>
+              <div class="wheels">
+                <svg class="wheel" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#2f1a0d" stroke="#100804" stroke-width="2"/><circle cx="30" cy="30" r="16" fill="none" stroke="#c08a4e" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#c08a4e"/><line x1="30" y1="10" x2="30" y2="50" stroke="#c08a4e" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#c08a4e" stroke-width="2"/></svg>
+                <svg class="wheel" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#2f1a0d" stroke="#100804" stroke-width="2"/><circle cx="30" cy="30" r="16" fill="none" stroke="#c08a4e" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#c08a4e"/><line x1="30" y1="10" x2="30" y2="50" stroke="#c08a4e" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#c08a4e" stroke-width="2"/></svg>
+              </div>
+            </div>
+
+            <!-- Carriage 03 -->
+            <div class="journey-carriage" data-reveal="c3">
+              <div class="badge-wrap">
+                <div class="badge sage">03</div>
+                <div class="dotted-connector"></div>
+              </div>
+              <div class="carriage-body sage">
+                <div class="carriage-icon sage">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#4c5c30" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 12h16a1 1 0 0 1 1 1v1a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5v-1a1 1 0 0 1 1-1Z"/>
+                    <path d="M15 8c0-2.5-1.5-4-3-4s-1 2 0 3 3 1 3 1Z"/>
+                  </svg>
+                </div>
+                <h3 class="carriage-title">Dried &amp; Milled</h3>
+                <p class="carriage-desc">Produce is dried, and milled into fine powder where needed.</p>
+              </div>
+              <div class="wheels">
+                <svg class="wheel" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#2f1a0d" stroke="#100804" stroke-width="2"/><circle cx="30" cy="30" r="16" fill="none" stroke="#c08a4e" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#c08a4e"/><line x1="30" y1="10" x2="30" y2="50" stroke="#c08a4e" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#c08a4e" stroke-width="2"/></svg>
+                <svg class="wheel" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#2f1a0d" stroke="#100804" stroke-width="2"/><circle cx="30" cy="30" r="16" fill="none" stroke="#c08a4e" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#c08a4e"/><line x1="30" y1="10" x2="30" y2="50" stroke="#c08a4e" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#c08a4e" stroke-width="2"/></svg>
+              </div>
+            </div>
+
+            <!-- Carriage 04 -->
+            <div class="journey-carriage" data-reveal="c4">
+              <div class="badge-wrap">
+                <div class="badge lavender">04</div>
+                <div class="dotted-connector"></div>
+              </div>
+              <div class="carriage-body lavender">
+                <div class="carriage-icon lavender">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#6b5230" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/>
+                  </svg>
+                </div>
+                <h3 class="carriage-title">Packed &amp; Sealed</h3>
+                <p class="carriage-desc">Sealed in resealable packs that protect colour, aroma and flavour.</p>
+              </div>
+              <div class="wheels">
+                <svg class="wheel" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#2f1a0d" stroke="#100804" stroke-width="2"/><circle cx="30" cy="30" r="16" fill="none" stroke="#c08a4e" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#c08a4e"/><line x1="30" y1="10" x2="30" y2="50" stroke="#c08a4e" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#c08a4e" stroke-width="2"/></svg>
+                <svg class="wheel" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#2f1a0d" stroke="#100804" stroke-width="2"/><circle cx="30" cy="30" r="16" fill="none" stroke="#c08a4e" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#c08a4e"/><line x1="30" y1="10" x2="30" y2="50" stroke="#c08a4e" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#c08a4e" stroke-width="2"/></svg>
+              </div>
+            </div>
+
+            <!-- Carriage 05 -->
+            <div class="journey-carriage" data-reveal="c5">
+              <div class="badge-wrap">
+                <div class="badge peach">05</div>
+                <div class="dotted-connector"></div>
+              </div>
+              <div class="carriage-body peach">
+                <div class="carriage-icon peach">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#7a4d24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9Z"/>
+                  </svg>
+                </div>
+                <h3 class="carriage-title">Shipped Worldwide</h3>
+                <p class="carriage-desc">Dispatched from Pollachi to homes and businesses in India and abroad.</p>
+              </div>
+              <div class="wheels">
+                <svg class="wheel" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#2f1a0d" stroke="#100804" stroke-width="2"/><circle cx="30" cy="30" r="16" fill="none" stroke="#c08a4e" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#c08a4e"/><line x1="30" y1="10" x2="30" y2="50" stroke="#c08a4e" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#c08a4e" stroke-width="2"/></svg>
+                <svg class="wheel" viewBox="0 0 60 60"><circle cx="30" cy="30" r="27" fill="#2f1a0d" stroke="#100804" stroke-width="2"/><circle cx="30" cy="30" r="16" fill="none" stroke="#c08a4e" stroke-width="4"/><circle cx="30" cy="30" r="5" fill="#c08a4e"/><line x1="30" y1="10" x2="30" y2="50" stroke="#c08a4e" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#c08a4e" stroke-width="2"/></svg>
+              </div>
+            </div>
+
+          </div><!-- /.journey-train -->
+
+        </div><!-- /.journey-rail -->
+      </div><!-- /.journey-track-outer -->
+      <div class="scroll-hint">Swipe to explore →</div>
+    </div><!-- /.journey-stage -->
+  </div><!-- /.journey-scroll-wrap -->
+</section>
+
+<script>
+(function(){
+  var section     = document.getElementById('journeySection');
+  var train       = document.getElementById('journeyTrain');
+  var wheelSvgs   = Array.prototype.slice.call(train.querySelectorAll('.wheel'));
+  var locoWheelGs = Array.prototype.slice.call(train.querySelectorAll('.loco-wheel'));
+  var trackOuter  = train.closest('.journey-track-outer');
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* header entrance */
+  if(!('IntersectionObserver' in window) || reduceMotion){
+    section.classList.add('is-visible');
+  } else {
+    var headerObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          section.classList.add('is-visible');
+          headerObs.unobserve(section);
+        }
+      });
+    }, { threshold: 0.15 });
+    headerObs.observe(section);
+  }
+
+  if(reduceMotion){ return; } // train sits in its final resting position via CSS, no animation
+
+  /* DESKTOP/TABLET: the complete train (locomotive + 5 carriages) always
+     fits exactly inside .journey-track-outer — each unit is a
+     flex-basis:0 flex item that shares the available width, so the
+     train's rest position is simply translateX(0) (endX). It starts
+     shifted slightly right and eases LEFT into that resting spot.
+
+     MOBILE: the train uses fixed clamp() widths (see the mobile CSS
+     block) so it's much wider than the phone screen. Instead of resting
+     after a short slide, it plays out a full RIGHT → LEFT journey —
+     starting completely off-screen right and travelling all the way
+     until the last carriage has fully entered the frame — so every
+     carriage is revealed in turn, one after another, the way carriages
+     of a real train pass a platform. */
+  var isMobile = false;
+  var startX, endX;
+  var played = false;
+
+  function recalcBounds(){
+    var containerWidth = trackOuter.clientWidth;
+    isMobile = window.matchMedia('(max-width: 767px)').matches;
+
+    if(isMobile){
+      var trainWidth = train.scrollWidth;
+      startX = containerWidth + 40; // fully off-screen right to start
+      // travel until the tail of the train (last carriage) is flush
+      // with the right edge of the frame — i.e. the whole train has
+      // passed through and each carriage has had its moment in view
+      endX = Math.min(0, containerWidth - trainWidth);
+    } else {
+      endX = 0; // train's resting position: flush with the left edge of the frame
+      var offset = Math.min(220, Math.max(110, containerWidth * 0.12));
+      startX = offset; // begins shifted slightly right, then slides LEFT into place —
+                        // same direction of travel (and wheel-rotation sense) as before
+    }
+  }
+
+  function getDuration(){
+    var distance = Math.abs(startX - endX);
+    if(isMobile){
+      // scale with how far the train actually has to travel so each
+      // carriage gets a comfortable moment on screen, but keep it
+      // within a sensible floor/ceiling either way
+      return Math.max(4200, Math.min(11000, distance * 6.5));
+    }
+    return 2800; // ms — smooth slide into the resting position
+  }
+
+  function easeInOutSine(t){
+    return -(Math.cos(Math.PI * t) - 1) / 2;
+  }
+
+  function setPosition(x, bounceY){
+    var y = bounceY || 0;
+    train.style.transform = 'translate3d(' + x.toFixed(2) + 'px,' + y.toFixed(2) + 'px,0)';
+    var rotateDeg = x * 0.55;
+    for(var i = 0; i < wheelSvgs.length; i++){
+      wheelSvgs[i].style.transform = 'rotate(' + rotateDeg + 'deg)';
+    }
+    for(var j = 0; j < locoWheelGs.length; j++){
+      var g = locoWheelGs[j];
+      g.setAttribute('transform', 'rotate(' + rotateDeg + ' ' + g.getAttribute('data-cx') + ' ' + g.getAttribute('data-cy') + ')');
+    }
+  }
+
+  function playJourney(){
+    if(played) return;
+    played = true;
+    recalcBounds();
+    setPosition(startX);
+    var DURATION = getDuration();
+
+    var startTime = null;
+    function step(ts){
+      if(startTime === null) startTime = ts;
+      var elapsed = ts - startTime;
+      var t = Math.min(1, elapsed / DURATION);
+      var eased = easeInOutSine(t);
+      var bounceY = t < 1 ? Math.sin(elapsed / 60) * 1.4 : 0;
+      setPosition(startX + (endX - startX) * eased, bounceY);
+      if(t < 1){
+        window.requestAnimationFrame(step);
+      }
+    }
+    window.requestAnimationFrame(step);
+  }
+
+  recalcBounds();
+  setPosition(startX); // train waits just off-screen left until it enters view
+
+  if('IntersectionObserver' in window){
+    var trainObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          playJourney();
+          trainObs.unobserve(trackOuter);
+        }
+      });
+    }, { threshold: 0.35 });
+    trainObs.observe(trackOuter);
+  } else {
+    playJourney();
+  }
+
+  window.addEventListener('resize', function(){
+    if(!played){ recalcBounds(); setPosition(startX); }
+  });
+})();
+</script>
+
+
+<!-- FINAL CTA -->
+<section class="final-cta final-cta--about">
+  <div class="bg"></div>
+  <h2 class="reveal">Taste The<br><span class="accent">Difference</span>.</h2>
+  <p class="reveal">Natural Indian produce — from our soil to your kitchen.</p>
+  <a href="shop.html" class="btn reveal">Shop Now</a>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="nav-logo foot-logo"><img src="assets/img/logo.png" alt="Skyrah Impex" class="logo-img"><span class="logo-text">Skyrah <span class="logo-accent">Impex</span></span></div>
+        <p><span data-site="tagline">From Indian Soil to Global Soul</span>.</p>
+        <div class="foot-social">
+          <a href="#" data-social="instagram" aria-label="Instagram" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" data-social="facebook" aria-label="Facebook" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" data-social="linkedin" aria-label="LinkedIn" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+          <a href="#" data-social="youtube" aria-label="YouTube" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10.5 9.7 4 2.3-4 2.3Z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://wa.me/919566348350" data-site-href="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Shop</h5>
+        <a href="shop.html">All Products</a><span data-foot-cats style="display:contents"></span>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a><a href="about.html">Our Story</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h5>Help</h5>
+        <a href="contact.html">Bulk &amp; Export</a><a href="faq.html">Shipping</a><a href="faq.html">Returns</a><a href="faq.html">FAQs</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="policies.html#privacy">Privacy Policy</a><a href="policies.html#terms">Terms &amp; Conditions</a><a href="policies.html#delivery">Delivery Policy</a><a href="policies.html#returns">Return &amp; Refund Policy</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-legal">
+        <strong data-site="legalName">Skyrah Impex Private Limited</strong> &middot; <span data-site="businessLine">Import &amp; Export</span><br>
+        <span data-site="address"># 99/3/8, Ponnagar, R.Ponnapuram, Pollachi, Tamil Nadu – 642002</span><br>
+        <a href="tel:+919566348350" data-site-href="tel1" data-site="phone1">+91 9566 348 350</a><span data-site-row> &middot; <a href="tel:+918289997904" data-site-href="tel2" data-site="phone2">+91 8289 997 904</a></span> &middot; <a href="mailto:info@skyrahimpex.com" data-site-href="mailto" data-site="email">info@skyrahimpex.com</a><br>
+        <span data-site-row>FSSAI No.: <span data-site="fssai">22425557000006</span></span><span data-site-row> &middot; GSTIN: <span data-site="gstin"></span></span><span data-site-row> &middot; IEC: <span data-site="iec"></span></span>
+      </div>
+      <div>&copy; <span data-site="year">2026</span> <span data-site="legalName">Skyrah Impex Private Limited</span>. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-btn" href="https://wa.me/919566348350" data-site-href="whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <div class="wa-pulse"></div>
+  <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3 17.4L2 22l4.7-1.2A11 11 0 1 0 20.5 3.5zM12 20.1a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.1 8.1 0 1 1 12 20.1zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.6 6.6 0 0 1-2-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4v-.4c0-.1-.5-1.3-.7-1.8s-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.5 11.2 11.2 0 0 0 4.4 3.9c.6.2 1 .4 1.4.5a3.3 3.3 0 0 0 1.5.1 2.5 2.5 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c-.1-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script src="assets/js/products-data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+gsap.utils.toArray('.mask-line span').forEach((el,i)=>{
+  gsap.to(el, {
+    yPercent:0, duration:0.9, ease:'cubic-bezier(0.16,1,0.3,1)', delay:i*0.08,
+    scrollTrigger:{trigger:'.intro', start:'top 70%'}
+  });
+});
+['storyClip1','storyClip2'].forEach(id=>{
+  const el = document.getElementById(id);
+  if(el){
+    gsap.to(el, {
+      clipPath:'inset(0 0% 0 0)', duration:1.2, ease:'power3.inOut',
+      scrollTrigger:{trigger: el.closest('.story'), start:'top 65%'}
+    });
+  }
+});
+
+/* ---------- mobile nav drawer ---------- */
+const navToggle = document.getElementById('navToggle');
+const mobileDrawer = document.getElementById('mobileDrawer');
+const mobileDrawerBackdrop = document.getElementById('mobileDrawerBackdrop');
+const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+if(navToggle && mobileDrawer && mobileDrawerBackdrop){
+  function openDrawer(){
+    mobileDrawer.classList.add('open');
+    mobileDrawerBackdrop.classList.add('open');
+    navToggle.classList.add('open');
+    navToggle.setAttribute('aria-expanded', 'true');
+    mobileDrawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer(){
+    mobileDrawer.classList.remove('open');
+    mobileDrawerBackdrop.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    mobileDrawer.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  navToggle.addEventListener('click', ()=>{
+    mobileDrawer.classList.contains('open') ? closeDrawer() : openDrawer();
+  });
+  mobileDrawerBackdrop.addEventListener('click', closeDrawer);
+  if(mobileDrawerClose) mobileDrawerClose.addEventListener('click', closeDrawer);
+  mobileDrawer.querySelectorAll('a').forEach(a=> a.addEventListener('click', closeDrawer));
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape' && mobileDrawer.classList.contains('open')) closeDrawer();
+  });
+
+  /* highlight whichever drawer row matches the current page, so the
+     "active pill" always reflects where the visitor actually is
+     (Home on the homepage, Our Story on about.html, etc.) */
+  var currentPage = location.pathname.split('/').pop() || 'index.html';
+  mobileDrawer.querySelectorAll('.mdn-item').forEach(function(item){
+    var itemHref = item.getAttribute('href');
+    if(itemHref === currentPage){ item.classList.add('is-active'); }
+  });
+}
+
+/* ---------- "What We Stand For" honeycomb tap toggle (touch devices) ---------- */
+(function(){
+  const hive = document.getElementById('hexHive');
+  if(!hive) return;
+  const items = hive.querySelectorAll('.hex-item');
+  items.forEach(item => {
+    item.addEventListener('click', function(e){
+      e.stopPropagation();
+      const wasActive = item.classList.contains('is-active');
+      items.forEach(i => i.classList.remove('is-active'));
+      if(!wasActive) item.classList.add('is-active');
+    });
+  });
+  document.addEventListener('click', () => items.forEach(i => i.classList.remove('is-active')));
+})();
+
+ScrollTrigger.refresh();
+</script>
+</body>
+</html>

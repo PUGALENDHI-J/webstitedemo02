@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 340" fill="none">
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="10.5" fill="#F3EFE8" fill-opacity="0.88" letter-spacing="0.6" text-anchor="end">
+
+    <!-- Badge 1: Zero Preservatives -->
+    <g transform="translate(0,52)">
+      <circle cx="180" cy="0" r="27" stroke="#F3EFE8" stroke-opacity="0.45" stroke-width="1.2"/>
+      <circle cx="180" cy="0" r="27" stroke="#F0A63D" stroke-opacity="0.35" stroke-width="0.6"/>
+      <path d="M180-13c7 2 11 3 11 3v11c0 8-5 13-11 15-6-2-11-7-11-15v-11s4-1 11-3Z" fill="#9BA968" fill-opacity="0.9"/>
+      <path d="M175 0l3 3 7-7" stroke="#2A1B10" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="142" y="-6">CAREFULLY DRIED</text>
+      <text x="142" y="9" fill-opacity="0.55" font-weight="500">Colour &amp; aroma kept</text>
+    </g>
+
+    <!-- Badge 2: Small Batch -->
+    <g transform="translate(0,158)">
+      <circle cx="180" cy="0" r="27" stroke="#F3EFE8" stroke-opacity="0.45" stroke-width="1.2"/>
+      <circle cx="180" cy="0" r="27" stroke="#F0A63D" stroke-opacity="0.35" stroke-width="0.6"/>
+      <path d="M167-9h26l-3 22h-20l-3-22Z" fill="#D97D2E" fill-opacity="0.85"/>
+      <path d="M167-9l13 8 13-8" stroke="#2A1B10" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+      <text x="142" y="-6">SEALED FRESH</text>
+      <text x="142" y="9" fill-opacity="0.55" font-weight="500">Resealable packs</text>
+    </g>
+
+    <!-- Badge 3: Loved By Thousands -->
+    <g transform="translate(0,264)">
+      <circle cx="180" cy="0" r="27" stroke="#F3EFE8" stroke-opacity="0.45" stroke-width="1.2"/>
+      <circle cx="180" cy="0" r="27" stroke="#F0A63D" stroke-opacity="0.35" stroke-width="0.6"/>
+      <path d="M180-12l3.5 7.2 8 1.1-5.8 5.6 1.4 8-7.1-3.7-7.1 3.7 1.4-8-5.8-5.6 8-1.1 3.5-7.2Z" fill="#F0A63D" fill-opacity="0.92"/>
+      <text x="142" y="-6">INDIA &amp; BEYOND</text>
+      <text x="142" y="9" fill-opacity="0.55" font-weight="500">Retail, bulk &amp; export</text>
+    </g>
+  </g>
+</svg>

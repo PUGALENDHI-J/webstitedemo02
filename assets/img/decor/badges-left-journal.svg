@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 340" fill="none">
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="10.5" fill="#F3EFE8" fill-opacity="0.88" letter-spacing="0.6" text-anchor="start">
+
+    <g transform="translate(0,52)">
+      <circle cx="30" cy="0" r="27" stroke="#F3EFE8" stroke-opacity="0.45" stroke-width="1.2"/>
+      <circle cx="30" cy="0" r="27" stroke="#F0A63D" stroke-opacity="0.35" stroke-width="0.6"/>
+      <path d="M19 0l7 7 15-16" stroke="#F0A63D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="68" y="-6">TRIED &amp; TESTED</text>
+      <text x="68" y="9" fill-opacity="0.55" font-weight="500">Recipes that actually work</text>
+    </g>
+
+    <g transform="translate(0,158)">
+      <circle cx="30" cy="0" r="27" stroke="#F3EFE8" stroke-opacity="0.45" stroke-width="1.2"/>
+      <circle cx="30" cy="0" r="27" stroke="#F0A63D" stroke-opacity="0.35" stroke-width="0.6"/>
+      <circle cx="30" cy="0" r="8" fill="#F0A63D" fill-opacity="0.9"/><g stroke="#F0A63D" stroke-width="1.6" stroke-linecap="round"><path d="M30-16v4M30 12v4M46 0h-4M18 0h-4M41-11l-3 3M22 8l-3 3M41 11l-3-3M22-8l-3-3"/></g>
+      <text x="68" y="-6">SPICE GUIDES</text>
+      <text x="68" y="9" fill-opacity="0.55" font-weight="500">Know your spices</text>
+    </g>
+
+    <g transform="translate(0,264)">
+      <circle cx="30" cy="0" r="27" stroke="#F3EFE8" stroke-opacity="0.45" stroke-width="1.2"/>
+      <circle cx="30" cy="0" r="27" stroke="#F0A63D" stroke-opacity="0.35" stroke-width="0.6"/>
+      <path d="M17-10c5 0 10 2 13 5 3-3 8-5 13-5v20c-5 0-10 2-13 5-3-3-8-5-13-5V-10Z" fill="#D97D2E" fill-opacity="0.85"/><path d="M30-5v15" stroke="#2A1B10" stroke-width="1"/>
+      <text x="68" y="-6">FROM OUR KITCHEN</text>
+      <text x="68" y="9" fill-opacity="0.55" font-weight="500">Written by us, for you</text>
+    </g>
+  </g>
+</svg>

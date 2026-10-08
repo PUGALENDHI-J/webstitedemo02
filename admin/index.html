@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin — Skyrah Impex</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="../assets/img/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- ============ LOGIN ============ -->
+<main id="loginView" class="login" hidden>
+  <form class="login-card" id="loginForm" novalidate>
+    <img src="../assets/img/logo.png" alt="" class="login-logo">
+    <h1>Skyrah Impex</h1>
+    <p class="login-sub">Admin panel — sign in to manage your website</p>
+    <div class="alert alert-err" id="loginMsg" role="alert" hidden></div>
+    <label class="field">
+      <span class="field-label">Password</span>
+      <span class="pw-wrap">
+        <input id="loginPw" type="password" autocomplete="current-password" required>
+        <button type="button" class="pw-eye" data-eye="loginPw" aria-label="Show password"></button>
+      </span>
+    </label>
+    <button class="btn btn-primary btn-block" id="loginBtn">Sign in</button>
+    <a class="login-back" href="../index.html">&larr; Back to website</a>
+  </form>
+</main>
+
+<!-- ============ APP ============ -->
+<div id="appView" class="app" hidden>
+  <aside class="side" id="side" aria-label="Admin navigation">
+    <div class="side-brand">
+      <img src="../assets/img/logo.png" alt="">
+      <div><strong>Skyrah Impex</strong><small>Admin panel</small></div>
+    </div>
+    <nav class="side-nav" id="sideNav"></nav>
+    <div class="side-foot">
+      <a href="../index.html" target="_blank" rel="noopener" class="side-link" id="viewSiteLink"></a>
+      <button type="button" class="side-link" id="logoutBtn"></button>
+    </div>
+  </aside>
+  <div class="side-backdrop" id="sideBackdrop"></div>
+
+  <div class="main">
+    <header class="topbar">
+      <button type="button" class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="side"></button>
+      <div class="topbar-title">
+        <h1 id="pageTitle">Dashboard</h1>
+        <p id="pageSub"></p>
+      </div>
+      <div class="topbar-actions" id="pageActions"></div>
+    </header>
+    <div class="alert alert-warn banner" id="pwBanner" hidden>
+      <span><strong>Security:</strong> you are still using the default admin password.</span>
+      <a href="#/account" class="btn btn-sm btn-dark">Change it now</a>
+    </div>
+    <section class="content" id="content" tabindex="-1" aria-live="polite"></section>
+  </div>
+</div>
+
+<!-- ============ DRAWER (editors) ============ -->
+<div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" hidden>
+  <form id="drawerForm" novalidate>
+    <header class="drawer-head">
+      <h2 id="drawerTitle">Edit</h2>
+      <button type="button" class="icon-btn" id="drawerClose" aria-label="Close"></button>
+    </header>
+    <div class="drawer-body" id="drawerBody"></div>
+    <footer class="drawer-foot">
+      <button type="button" class="btn btn-ghost" id="drawerCancel">Cancel</button>
+      <button type="submit" class="btn btn-primary" id="drawerSave">Save</button>
+    </footer>
+  </form>
+</aside>
+
+<!-- ============ CONFIRM DIALOG ============ -->
+<div class="modal-backdrop" id="modal" hidden>
+  <div class="modal" role="alertdialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalText">
+    <h2 id="modalTitle">Are you sure?</h2>
+    <p id="modalText"></p>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-ghost" id="modalCancel">Cancel</button>
+      <button type="button" class="btn btn-danger" id="modalOk">Delete</button>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="admin.js"></script>
+</body>
+</html>

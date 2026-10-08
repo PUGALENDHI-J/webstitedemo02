@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title id="pageTitle">Product — Skyrah Impex</title>
+<meta name="description" content="Natural Indian spices, powders, dehydrated vegetables and herbal infusions from Skyrah Impex, Pollachi." id="pageDesc" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Yellowtail&family=Playfair+Display:wght@600;700;800&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="assets/img/favicon-16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<nav class="nav scrolled" id="mainNav">
+  <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="Skyrah Impex" class="logo-img"><span class="logo-text">Skyrah <span class="logo-accent">Impex</span></span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button type="button" class="search-toggle" id="searchToggle" aria-label="Search">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    <a href="shop.html" aria-label="Cart">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="mobile-drawer-header">
+    <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="Skyrah Impex" class="logo-img"><span class="logo-text">Skyrah <span class="logo-accent">Impex</span></span></a>
+    <button class="mobile-drawer-close" id="mobileDrawerClose" type="button" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4 4 20"/></svg>
+    </button>
+  </div>
+
+  <p class="mobile-drawer-tagline">From Indian soil<br>to global soul <span aria-hidden="true">♡</span></p>
+
+  <nav class="mobile-drawer-nav" aria-label="Mobile">
+    <a href="index.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 9.5V19a1 1 0 0 0 1 1h3v-5h4v5h3a1 1 0 0 0 1-1V9.5"/></svg></span>
+      <span class="mdn-label">Home</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="shop.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
+      <span class="mdn-label">Shop</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="about.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-9 0-16 6-16 15 9 0 15-6 16-15Z"/><path d="M9 15c2-3 5-6 10-9"/></svg></span>
+      <span class="mdn-label">Our Story</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="journal.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5c-1.6-1.3-3.6-2-6.5-2A1.5 1.5 0 0 0 4 6v11.5c0 .5.4.9.9.8 2.6-.4 4.6.2 6.1 1.4V6.5Z"/><path d="M12 6.5c1.6-1.3 3.6-2 6.5-2A1.5 1.5 0 0 1 20 6v11.5c0 .5-.4.9-.9.8-2.6-.4-4.6.2-6.1 1.4V6.5Z"/></svg></span>
+      <span class="mdn-label">Journal</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="contact.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 12.3c.9 1.8 2.4 3.3 4.2 4.2l1.3-1.3c.2-.2.5-.3.7-.2.8.3 1.6.4 2.4.4.4 0 .7.3.7.7v2c0 .4-.3.7-.7.7C10.9 18.8 6 13.9 6 7.7c0-.4.3-.7.7-.7h2c.4 0 .7.3.7.7 0 .8.1 1.6.4 2.4.1.3 0 .5-.2.7L8.4 12.3Z" fill="currentColor" stroke="none"/><path d="M14.2 8.3c1 .35 1.75 1.15 2.1 2.15"/><path d="M15.3 5.6c1.9.6 3.4 2.15 4 4.05"/></svg></span>
+      <span class="mdn-label">Contact</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+  </nav>
+
+  <div class="mobile-drawer-promo">
+    <span class="mdp-leaf" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9c0-3.5 2.5-6 6-6-.3 3.8-2.8 6-6 6Z"/><path d="M12 13c0-2.8-2-5-5-5 .3 3 2.3 5 5 5Z"/></svg></span>
+    <p>Natural Indian produce<br>packed for the world</p>
+  </div>
+
+  <div class="mobile-drawer-social">
+    <a href="#" data-social="instagram" aria-label="Instagram" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+    <a href="#" data-social="facebook" aria-label="Facebook" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+    <a href="#" data-social="linkedin" aria-label="LinkedIn" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+    <a href="#" data-social="youtube" aria-label="YouTube" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10.5 9.7 4 2.3-4 2.3Z" fill="currentColor" stroke="none"/></svg></a>
+    <a href="https://wa.me/919566348350" data-site-href="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+  </div>
+
+  <div class="mobile-drawer-footer" aria-hidden="true">
+    <div class="mdf-shape"></div>
+    <img class="mdf-photo" src="assets/img/decor/mdf-basket-photo.png" alt="" loading="lazy">
+    <div class="mdf-words"><span>Natural</span><span>Sustainable</span><span>Mindful</span></div>
+  </div>
+</aside>
+
+<section class="product-detail" style="padding-top:150px;">
+  <div class="wrap">
+    <div class="breadcrumb" style="color:var(--millet); opacity:0.7; margin-bottom:40px;">
+      <a href="index.html" style="color:var(--clay);">Home</a><span>/</span>
+      <a href="shop.html" style="color:var(--clay);">Shop</a><span>/</span>
+      <span id="crumbName">Product</span>
+    </div>
+
+    <div class="pd-grid" id="pdGrid">
+      <div>
+        <div class="pd-media">
+          <img id="pdImg" src="assets/img/logo.png" alt="">
+        </div>
+        <div class="pd-gallery" id="pdGallery"><!-- injected when the product has more than one photo --></div>
+      </div>
+      <div class="pd-info">
+        <div class="eyebrow" id="pdCat">Category</div>
+        <h1 id="pdName">Product</h1>
+        <div class="pd-price" id="pdPrice"></div>
+        <p class="pd-stock" id="pdStock" hidden>Currently out of stock — send us an enquiry and we'll let you know when it's back.</p>
+        <p class="pd-desc" id="pdDesc"></p>
+
+        <div class="pd-qty" id="pdQty">
+          <button type="button" id="qtyMinus" aria-label="Decrease quantity">−</button>
+          <span id="qtyVal" aria-live="polite">1</span>
+          <button type="button" id="qtyPlus" aria-label="Increase quantity">+</button>
+        </div>
+
+        <div class="pd-actions">
+          <button type="button" class="btn" id="addToCartBtn">Order on WhatsApp</button>
+          <a href="contact.html" class="btn ghost" id="enquiryBtn">Bulk / Export Enquiry</a>
+        </div>
+
+        <div class="pd-meta" id="pdMeta"><!-- injected --></div>
+
+        <div class="pd-tabs">
+          <div class="pd-tab-head" role="tablist">
+            <button type="button" class="active" data-tab="desc" role="tab">Description</button>
+            <button type="button" data-tab="prep" role="tab" id="prepTabBtn">How To Use</button>
+            <button type="button" data-tab="ship" role="tab">Shipping</button>
+          </div>
+          <div class="pd-tab-panel active" data-panel="desc">
+            <p id="pdLong"></p>
+            <p id="pdIngredients" hidden></p>
+          </div>
+          <div class="pd-tab-panel" data-panel="prep">
+            <ul id="pdUsage"></ul>
+            <p id="pdStorage" hidden></p>
+          </div>
+          <div class="pd-tab-panel" data-panel="ship">
+            <p><span data-site="shippingNote"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pd-missing" id="pdMissing" hidden>
+      <h1>We couldn't find that product.</h1>
+      <p>It may have been renamed or removed. Browse the full range instead.</p>
+      <a href="shop.html" class="btn">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<section class="related">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">You May<br>Also Like</h2>
+    </div>
+    <div class="product-grid" id="relatedGrid"><!-- injected --></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="nav-logo foot-logo"><img src="assets/img/logo.png" alt="Skyrah Impex" class="logo-img"><span class="logo-text">Skyrah <span class="logo-accent">Impex</span></span></div>
+        <p><span data-site="tagline">From Indian Soil to Global Soul</span>.</p>
+        <div class="foot-social">
+          <a href="#" data-social="instagram" aria-label="Instagram" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" data-social="facebook" aria-label="Facebook" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" data-social="linkedin" aria-label="LinkedIn" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+          <a href="#" data-social="youtube" aria-label="YouTube" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10.5 9.7 4 2.3-4 2.3Z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://wa.me/919566348350" data-site-href="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Shop</h5>
+        <a href="shop.html">All Products</a><span data-foot-cats style="display:contents"></span>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a><a href="about.html">Our Story</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h5>Help</h5>
+        <a href="contact.html">Bulk &amp; Export</a><a href="faq.html">Shipping</a><a href="faq.html">Returns</a><a href="faq.html">FAQs</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="policies.html#privacy">Privacy Policy</a><a href="policies.html#terms">Terms &amp; Conditions</a><a href="policies.html#delivery">Delivery Policy</a><a href="policies.html#returns">Return &amp; Refund Policy</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-legal">
+        <strong data-site="legalName">Skyrah Impex Private Limited</strong> &middot; <span data-site="businessLine">Import &amp; Export</span><br>
+        <span data-site="address"># 99/3/8, Ponnagar, R.Ponnapuram, Pollachi, Tamil Nadu – 642002</span><br>
+        <a href="tel:+919566348350" data-site-href="tel1" data-site="phone1">+91 9566 348 350</a><span data-site-row> &middot; <a href="tel:+918289997904" data-site-href="tel2" data-site="phone2">+91 8289 997 904</a></span> &middot; <a href="mailto:info@skyrahimpex.com" data-site-href="mailto" data-site="email">info@skyrahimpex.com</a><br>
+        <span data-site-row>FSSAI No.: <span data-site="fssai">22425557000006</span></span><span data-site-row> &middot; GSTIN: <span data-site="gstin"></span></span><span data-site-row> &middot; IEC: <span data-site="iec"></span></span>
+      </div>
+      <div>&copy; <span data-site="year">2026</span> <span data-site="legalName">Skyrah Impex Private Limited</span>. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-btn" href="https://wa.me/919566348350" data-site-href="whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <div class="wa-pulse"></div>
+  <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3 17.4L2 22l4.7-1.2A11 11 0 1 0 20.5 3.5zM12 20.1a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.1 8.1 0 1 1 12 20.1zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.6 6.6 0 0 1-2-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4v-.4c0-.1-.5-1.3-.7-1.8s-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.5 11.2 11.2 0 0 0 4.4 3.9c.6.2 1 .4 1.4.5a3.3 3.3 0 0 0 1.5.1 2.5 2.5 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c-.1-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script src="assets/js/products-data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+const params = new URLSearchParams(location.search);
+const product = getProductBySlug(params.get('slug') || '') || (!params.get('slug') ? PRODUCTS[0] : null);
+let qty = 1;
+
+if(!product){
+  document.getElementById('pdGrid').hidden = true;
+  document.getElementById('pdMissing').hidden = false;
+  document.getElementById('crumbName').textContent = 'Not found';
+  document.querySelector('.related').hidden = true;
+} else {
+  document.getElementById('pageTitle').textContent = product.name + ' — ' + SITE.brand;
+  document.getElementById('pageDesc').setAttribute('content', product.desc);
+  document.getElementById('crumbName').textContent = product.name;
+
+  const pdImgEl = document.getElementById('pdImg');
+  pdImgEl.addEventListener('error', ()=> handleImgError(pdImgEl));
+  pdImgEl.src = resolveProductImage(product);
+  pdImgEl.alt = product.name;
+
+  /* ---------- image gallery (main photo + extra photos from the admin) ---------- */
+  const photos = [resolveProductImage(product)].concat(product.gallery || []);
+  if(photos.length > 1){
+    const galleryEl = document.getElementById('pdGallery');
+    galleryEl.innerHTML = photos.map((src,i) => `
+      <button type="button" class="pd-thumb${i===0?' active':''}" data-i="${i}" aria-label="View photo ${i+1}">
+        <img src="${escHtml(src)}" alt="" loading="lazy" onerror="handleImgError(this)">
+      </button>`).join('');
+    galleryEl.querySelectorAll('.pd-thumb').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        delete pdImgEl.dataset.fallbackApplied;
+        pdImgEl.classList.remove('img-fallback');
+        pdImgEl.src = photos[+btn.dataset.i];
+        galleryEl.querySelectorAll('.pd-thumb').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  }
+
+  document.getElementById('pdCat').textContent = product.cat;
+  document.getElementById('pdName').textContent = product.name;
+  document.getElementById('pdPrice').innerHTML = formatINR(product.price) + (product.price && product.mrp > product.price ? ' <span class="pd-mrp">' + formatINR(product.mrp) + '</span>' : '');
+  document.getElementById('pdDesc').textContent = product.desc;
+  document.getElementById('pdLong').textContent = product.long;
+  if(product.ingredients){
+    const ing = document.getElementById('pdIngredients');
+    ing.hidden = false;
+    ing.innerHTML = '<strong>Ingredients:</strong> ' + escHtml(product.ingredients);
+  }
+  const usageEl = document.getElementById('pdUsage');
+  usageEl.innerHTML = product.usage.map(u => '<li>' + escHtml(u) + '</li>').join('');
+  usageEl.hidden = !product.usage.length;
+  if(product.storage){
+    const st = document.getElementById('pdStorage');
+    st.hidden = false;
+    st.innerHTML = '<strong>Storage:</strong> ' + escHtml(product.storage);
+  }
+  if(!product.usage.length && !product.storage) document.getElementById('prepTabBtn').hidden = true;
+
+  /* key facts — rows only appear when there is something to show */
+  const meta = [
+    ['Pack Size', product.weight],
+    ['Category', product.cat],
+    ['Origin', product.origin],
+    ['Shelf Life', product.shelfLife],
+    ['FSSAI No.', SITE.fssai]
+  ].filter(r => r[1]);
+  document.getElementById('pdMeta').innerHTML = meta.map(r => '<div><span>' + r[0] + '</span><strong>' + escHtml(r[1]) + '</strong></div>').join('');
+
+  document.getElementById('enquiryBtn').href = 'contact.html?product=' + encodeURIComponent(product.slug);
+  const orderBtn = document.getElementById('addToCartBtn');
+  if(!product.inStock){
+    document.getElementById('pdStock').hidden = false;
+    document.getElementById('pdQty').hidden = true;
+    orderBtn.hidden = true;
+    document.getElementById('enquiryBtn').classList.remove('ghost');
+    document.getElementById('enquiryBtn').textContent = 'Send An Enquiry';
+  }
+
+  const qtyVal = document.getElementById('qtyVal');
+  document.getElementById('qtyMinus').addEventListener('click', ()=>{ qty = Math.max(1, qty-1); qtyVal.textContent = qty; });
+  document.getElementById('qtyPlus').addEventListener('click', ()=>{ qty = Math.min(99, qty+1); qtyVal.textContent = qty; });
+  orderBtn.addEventListener('click', ()=>{
+    window.open(waLink(orderText(product, qty)), '_blank', 'noopener');
+  });
+
+  /* ---------- tabs ---------- */
+  document.querySelectorAll('.pd-tab-head button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      document.querySelectorAll('.pd-tab-head button').forEach(b=>b.classList.remove('active'));
+      document.querySelectorAll('.pd-tab-panel').forEach(p=>p.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelector('.pd-tab-panel[data-panel="'+btn.dataset.tab+'"]').classList.add('active');
+    });
+  });
+
+  /* ---------- related products ---------- */
+  const related = PRODUCTS.filter(p => p.slug !== product.slug && p.cat === product.cat)
+    .concat(PRODUCTS.filter(p => p.slug !== product.slug && p.cat !== product.cat))
+    .slice(0,4);
+  if(!related.length) document.querySelector('.related').hidden = true;
+  document.getElementById('relatedGrid').innerHTML = related.map(p => `
+    <a class="p-card p-card-link" href="${productUrl(p)}">
+      <div class="p-media">
+        <img src="${escHtml(resolveProductImage(p))}" alt="${escHtml(p.name)}" loading="lazy" onerror="handleImgError(this)">
+        <div class="price-badge small"><span class="pb-label">Price</span><span class="pb-amount">${formatINR(p.price)}</span></div>
+      </div>
+      <div class="p-script">${escHtml(p.cat)}</div>
+      <h3>${escHtml(p.name)}</h3>
+      <p>${escHtml(p.desc)}${p.weight ? ' &middot; ' + escHtml(p.weight) : ''}</p>
+      <div class="p-foot">
+        <div class="p-price real">${formatINR(p.price)}</div>
+        <div class="p-add">View <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+    </a>
+  `).join('');
+}
+gsap.set('.p-card', {opacity:1, y:0, scale:1});
+
+/* ---------- mobile nav drawer ---------- */
+const navToggle = document.getElementById('navToggle');
+const mobileDrawer = document.getElementById('mobileDrawer');
+const mobileDrawerBackdrop = document.getElementById('mobileDrawerBackdrop');
+const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+if(navToggle && mobileDrawer && mobileDrawerBackdrop){
+  function openDrawer(){
+    mobileDrawer.classList.add('open');
+    mobileDrawerBackdrop.classList.add('open');
+    navToggle.classList.add('open');
+    navToggle.setAttribute('aria-expanded', 'true');
+    mobileDrawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer(){
+    mobileDrawer.classList.remove('open');
+    mobileDrawerBackdrop.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    mobileDrawer.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  navToggle.addEventListener('click', ()=>{
+    mobileDrawer.classList.contains('open') ? closeDrawer() : openDrawer();
+  });
+  mobileDrawerBackdrop.addEventListener('click', closeDrawer);
+  if(mobileDrawerClose) mobileDrawerClose.addEventListener('click', closeDrawer);
+  mobileDrawer.querySelectorAll('a').forEach(a=> a.addEventListener('click', closeDrawer));
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape' && mobileDrawer.classList.contains('open')) closeDrawer();
+  });
+
+  /* highlight whichever drawer row matches the current page, so the
+     "active pill" always reflects where the visitor actually is
+     (Home on the homepage, Our Story on about.html, etc.) */
+  var currentPage = location.pathname.split('/').pop() || 'index.html';
+  mobileDrawer.querySelectorAll('.mdn-item').forEach(function(item){
+    var itemHref = item.getAttribute('href');
+    if(itemHref === currentPage){ item.classList.add('is-active'); }
+  });
+}
+
+ScrollTrigger.refresh();
+</script>
+</body>
+</html>

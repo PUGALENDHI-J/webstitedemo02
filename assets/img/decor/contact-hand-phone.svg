@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" fill="none">
+  <!-- sparkle accents -->
+  <g stroke="#5C6838" stroke-width="3" stroke-linecap="round">
+    <path d="M40 96 L58 104"/>
+    <path d="M36 112 L52 116"/>
+  </g>
+  <path d="M244 108 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4Z" fill="#D97D2E"/>
+
+  <!-- floating contact bubbles -->
+  <circle cx="190" cy="70" r="30" fill="#9BA968"/>
+  <circle cx="190" cy="62" r="9" fill="#2A1B10"/>
+  <path d="M172 84c3-9 10-13 18-13s15 4 18 13" fill="#2A1B10"/>
+
+  <circle cx="258" cy="150" r="24" fill="#F3EFE8" stroke="#2A1B10" stroke-width="2"/>
+  <circle cx="258" cy="144" r="7" fill="#2A1B10"/>
+  <path d="M244 160c2.4-7 8-10 14-10s11.6 3 14 10" fill="#2A1B10"/>
+
+  <circle cx="52" cy="190" r="26" fill="#F0A63D"/>
+  <circle cx="52" cy="183" r="8" fill="#2A1B10"/>
+  <path d="M36 200c2.7-8 9-11.5 16-11.5S64.3 192 67 200" fill="#2A1B10"/>
+
+  <g stroke="#2A1B10" stroke-width="3" stroke-linecap="round">
+    <path d="M226 176 q10 6 10 16"/>
+    <path d="M234 170 q16 10 16 26"/>
+  </g>
+
+  <!-- phone -->
+  <rect x="96" y="86" width="108" height="196" rx="22" fill="#2A1B10"/>
+  <rect x="104" y="100" width="92" height="168" rx="12" fill="#F3EFE8"/>
+
+  <!-- small contact rows inside the phone screen -->
+  <circle cx="126" cy="128" r="10" fill="#9BA968"/>
+  <rect x="144" y="123" width="42" height="4" rx="2" fill="#D9CFBE"/>
+  <rect x="144" y="132" width="30" height="4" rx="2" fill="#D9CFBE"/>
+
+  <circle cx="126" cy="158" r="10" fill="#E7A9BE"/>
+  <rect x="144" y="153" width="42" height="4" rx="2" fill="#D9CFBE"/>
+  <rect x="144" y="162" width="30" height="4" rx="2" fill="#D9CFBE"/>
+
+  <circle cx="126" cy="188" r="10" fill="#7C8A4C"/>
+  <rect x="144" y="183" width="42" height="4" rx="2" fill="#D9CFBE"/>
+  <rect x="144" y="192" width="30" height="4" rx="2" fill="#D9CFBE"/>
+
+  <circle cx="126" cy="218" r="10" fill="#F0A63D"/>
+  <rect x="144" y="213" width="42" height="4" rx="2" fill="#D9CFBE"/>
+  <rect x="144" y="222" width="30" height="4" rx="2" fill="#D9CFBE"/>
+
+  <!-- call-to-action pill, echoing the site's "Contact" theme -->
+  <rect x="122" y="242" width="66" height="20" rx="10" fill="#9BA968"/>
+
+  <!-- hand holding the phone -->
+  <path d="M62 232c-4-30 4-58 26-70 6-3 12-2 14 4l4 12c8-4 15-2 17 6l3 10c8-3 15 0 17 8l2 8c7-2 13 1 15 8 6 22 2 46-10 62l-18 24H90c-16-20-26-46-28-72Z" fill="#C97F8B"/>
+  <path d="M92 168c3 14 5 28 6 42" stroke="#B76A78" stroke-width="3" stroke-linecap="round"/>
+  <path d="M113 160c2 15 4 30 5 45" stroke="#B76A78" stroke-width="3" stroke-linecap="round"/>
+  <path d="M133 168c2 14 3 27 4 41" stroke="#B76A78" stroke-width="3" stroke-linecap="round"/>
+</svg>

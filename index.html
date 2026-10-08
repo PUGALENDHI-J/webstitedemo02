@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Skyrah Impex Private Limited — From Indian Soil to Global Soul</title>
+<meta name="description" content="Skyrah Impex Private Limited, Pollachi — importers and exporters of natural Indian spices, spice powders, dehydrated vegetables, fruit powders and herbal infusions." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Yellowtail&family=Playfair+Display:wght@600;700;800&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="assets/img/favicon-16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="Skyrah Impex" class="logo-img"><span class="logo-text">Skyrah <span class="logo-accent">Impex</span></span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button type="button" class="search-toggle" id="searchToggle" aria-label="Search">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    <a href="shop.html" aria-label="Cart">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="mobile-drawer-header">
+    <a href="index.html" class="nav-logo"><img src="assets/img/logo.png" alt="Skyrah Impex" class="logo-img"><span class="logo-text">Skyrah <span class="logo-accent">Impex</span></span></a>
+    <button class="mobile-drawer-close" id="mobileDrawerClose" type="button" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4 4 20"/></svg>
+    </button>
+  </div>
+
+  <p class="mobile-drawer-tagline">From Indian soil<br>to global soul <span aria-hidden="true">♡</span></p>
+
+  <nav class="mobile-drawer-nav" aria-label="Mobile">
+    <a href="index.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 9.5V19a1 1 0 0 0 1 1h3v-5h4v5h3a1 1 0 0 0 1-1V9.5"/></svg></span>
+      <span class="mdn-label">Home</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="shop.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
+      <span class="mdn-label">Shop</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="about.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-9 0-16 6-16 15 9 0 15-6 16-15Z"/><path d="M9 15c2-3 5-6 10-9"/></svg></span>
+      <span class="mdn-label">Our Story</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="journal.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5c-1.6-1.3-3.6-2-6.5-2A1.5 1.5 0 0 0 4 6v11.5c0 .5.4.9.9.8 2.6-.4 4.6.2 6.1 1.4V6.5Z"/><path d="M12 6.5c1.6-1.3 3.6-2 6.5-2A1.5 1.5 0 0 1 20 6v11.5c0 .5-.4.9-.9.8-2.6-.4-4.6.2-6.1 1.4V6.5Z"/></svg></span>
+      <span class="mdn-label">Journal</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+    <a href="contact.html" class="mdn-item">
+      <span class="mdn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 12.3c.9 1.8 2.4 3.3 4.2 4.2l1.3-1.3c.2-.2.5-.3.7-.2.8.3 1.6.4 2.4.4.4 0 .7.3.7.7v2c0 .4-.3.7-.7.7C10.9 18.8 6 13.9 6 7.7c0-.4.3-.7.7-.7h2c.4 0 .7.3.7.7 0 .8.1 1.6.4 2.4.1.3 0 .5-.2.7L8.4 12.3Z" fill="currentColor" stroke="none"/><path d="M14.2 8.3c1 .35 1.75 1.15 2.1 2.15"/><path d="M15.3 5.6c1.9.6 3.4 2.15 4 4.05"/></svg></span>
+      <span class="mdn-label">Contact</span>
+      <span class="mdn-chevron" aria-hidden="true">&rsaquo;</span>
+    </a>
+  </nav>
+
+  <div class="mobile-drawer-promo">
+    <span class="mdp-leaf" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9c0-3.5 2.5-6 6-6-.3 3.8-2.8 6-6 6Z"/><path d="M12 13c0-2.8-2-5-5-5 .3 3 2.3 5 5 5Z"/></svg></span>
+    <p>Natural Indian produce<br>packed for the world</p>
+  </div>
+
+  <div class="mobile-drawer-social">
+    <a href="#" data-social="instagram" aria-label="Instagram" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+    <a href="#" data-social="facebook" aria-label="Facebook" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+    <a href="#" data-social="linkedin" aria-label="LinkedIn" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+    <a href="#" data-social="youtube" aria-label="YouTube" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10.5 9.7 4 2.3-4 2.3Z" fill="currentColor" stroke="none"/></svg></a>
+    <a href="https://wa.me/919566348350" data-site-href="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+  </div>
+
+  <div class="mobile-drawer-footer" aria-hidden="true">
+    <div class="mdf-shape"></div>
+    <img class="mdf-photo" src="assets/img/decor/mdf-basket-photo.png" alt="" loading="lazy">
+    <div class="mdf-words"><span>Natural</span><span>Sustainable</span><span>Mindful</span></div>
+  </div>
+</aside>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-visual-wrap" id="heroVisualWrap">
+      <img class="hero-leaf hero-leaf-tr" src="assets/img/decor/leaf-photo-tea.png" alt="" aria-hidden="true">
+      <img class="hero-leaf hero-leaf-tr2" src="assets/img/decor/leaf-flat-branch.png" alt="" aria-hidden="true">
+      <img class="hero-leaf hero-leaf-bl" src="assets/img/decor/leaf-photo-mint-cluster.png" alt="" aria-hidden="true">
+      <span class="hero-dot-deco d1" aria-hidden="true"></span>
+      <span class="hero-dot-deco d2" aria-hidden="true"></span>
+      <span class="hero-dot-deco d3" aria-hidden="true"></span>
+      <div class="hero-frame" id="heroFrame">
+        <div class="hero-blob"></div>
+        <div class="hero-visual" id="heroVisual"><!-- slides injected --></div>
+      </div>
+      <img class="hero-leaf hero-leaf-scatter" src="assets/img/decor/leaf-photo-scatter.png" alt="" aria-hidden="true">
+      <div class="price-badge" id="heroPriceBadge">
+        <span class="pb-label">From</span>
+        <span class="pb-amount" id="heroPriceAmount">India</span>
+        <span class="pb-note" id="heroPbCat">Nutmeg</span>
+      </div>
+      <div class="hero-dot" aria-hidden="true"></div>
+      <div class="hero-testi" id="heroTesti">
+        <span class="ht-quote-icon">&ldquo;</span>
+        <p id="heroTestiQuote">Natural spices, powders and infusions — carefully dried, packed and shipped from Indian farms to kitchens worldwide.</p>
+        <div class="ht-foot">
+          <div class="ht-name" id="heroTestiName">— <span data-site="brand">Skyrah Impex</span></div>
+          <div class="ht-heart" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.35-9.3-8.1C1 10.2 1.6 6.9 4.4 5.3c2.3-1.3 4.9-.6 6.3 1.2l1.3 1.6 1.3-1.6c1.4-1.8 4-2.5 6.3-1.2 2.8 1.6 3.4 4.9 1.7 7.6C18.7 16.65 12 21 12 21z"/></svg></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-script" id="heroScript">From Indian Soil,
+        <img class="script-leaf" src="assets/img/decor/leaf-photo-mint-tiny.png" alt="" aria-hidden="true">
+      </div>
+      <h1 class="hero-title" id="heroTitleEl">Global <span>Soul.</span></h1>
+      <p class="hero-subtitle" id="heroSubtitle">Natural Indian spices, powders and infusions — packed with care for the world.</p>
+      <div class="hero-rating" id="heroRating"><span class="stars" aria-hidden="true">✦</span> <strong><span data-site="productCount">12</span> natural products</strong> <span>&middot; <span data-site="businessLine">Import &amp; Export</span> &middot; Pollachi, India</span></div>
+      <img class="hero-cta-arrow" src="assets/img/decor/arrow-loop.png" alt="" aria-hidden="true">
+      <div class="hero-cta-row" id="heroCtas">
+        <a href="shop.html" class="btn">Order Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="about.html" class="btn ghost">Explore More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE STRIP -->
+<section class="feature-strip">
+  <div class="wrap">
+    <div class="feature-grid">
+      <div class="feature-item reveal">
+        <div class="feature-icon f-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C7 6 5 10 5 13.5A7 7 0 0 0 19 13.5C19 10 17 6 12 2Z"/><path d="M12 22v-8"/></svg>
+        </div>
+        <div>
+          <h4>Naturally Sourced</h4>
+          <p>Natural produce from Indian farms.</p>
+        </div>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-icon f-clay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22c6-2 9-6 9-11V5l-9-3-9 3v6c0 5 3 9 9 11Z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <div>
+          <h4>Carefully Processed</h4>
+          <p>Cleaned, dried and milled with care.</p>
+        </div>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-icon f-rose">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7 12 3 4 7v10l8 4 8-4V7Z"/><path d="m4 7 8 4 8-4M12 11v10"/></svg>
+        </div>
+        <div>
+          <h4>Sealed Fresh</h4>
+          <p>Resealable packs that lock in aroma.</p>
+        </div>
+      </div>
+      <div class="feature-item reveal">
+        <div class="feature-icon f-olive">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        </div>
+        <div>
+          <h4>India &amp; Worldwide</h4>
+          <p>Retail packs, bulk and export orders.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="wrap">
+    <div class="intro-text">
+      <div class="mask-line"><span>Good food starts</span></div>
+      <div class="mask-line"><span>with good soil.</span></div>
+    </div>
+    <p class="intro-note reveal">Skyrah Impex Private Limited takes the natural produce of India — fragrant spices, sun-ripened vegetables, fruits, leaves and flowers — and brings it to kitchens at home and across the world.</p>
+  </div>
+</section>
+
+<!-- BRAND STORY -->
+<section class="story" id="story">
+  <div class="story-media">
+    <div class="clip" id="storyClip">
+      <img src="assets/img/about-farmers.jpg" alt="A farmer tending a lush green field by hand" />
+      <div class="tag">FARM TO WORLD</div>
+    </div>
+  </div>
+  <div class="story-copy">
+    <div class="eyebrow reveal">Our Philosophy</div>
+    <h2 class="reveal">From Indian soil.<br>To global soul.</h2>
+    <p class="reveal">We are an import and export company from Pollachi, Tamil Nadu. Every product starts on an Indian farm and is dried, packed and sealed to keep its natural colour, aroma and flavour — whether it travels across town or across the ocean.</p>
+    <a href="about.html" class="btn ghost reveal" style="width:fit-content;">Discover Our Story</a>
+  </div>
+</section>
+
+<!-- PRODUCTS (featured) -->
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">Discover<br>Skyrah Goodness</h2>
+      <p class="reveal">Nutmeg, mace, spice powders, dehydrated vegetables and herbal infusions — natural through and through.</p>
+    </div>
+    <div class="product-grid cols-3" id="productGrid"><!-- cards injected --></div>
+    <div style="text-align:center; margin-top:56px;">
+      <a href="shop.html" class="btn ghost reveal">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- INGREDIENT WHEEL (cosmic orbit) -->
+<section class="ingredients dark-section">
+  <div class="ing-stars" aria-hidden="true"></div>
+  <div class="ing-shooting-layer" id="ingShooting" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="ing-wrap">
+      <svg class="ing-orbit" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <ellipse cx="50" cy="50" rx="37" ry="34"></ellipse>
+      </svg>
+      <div class="ing-ring ing-ring-outer" id="ingRing"></div>
+      <div class="ing-comet ing-comet-a" aria-hidden="true"></div>
+      <div class="ing-comet ing-comet-b" aria-hidden="true"></div>
+      <div class="ing-comet ing-comet-c" aria-hidden="true"></div>
+      <div class="ing-comet ing-comet-d" aria-hidden="true"></div>
+      <div class="ing-dot ing-dot-1" aria-hidden="true"></div>
+      <div class="ing-dot ing-dot-2 ing-dot-sm" aria-hidden="true"></div>
+      <div class="ing-dot ing-dot-3 ing-dot-sm" aria-hidden="true"></div>
+      <div class="ing-dot ing-dot-4" aria-hidden="true"></div>
+      <div class="ing-wheel-pos">
+        <div class="ing-wheel-glow" aria-hidden="true"></div>
+        <div class="ing-wheel-holder" id="ingWheel">
+          <img src="assets/img/products/nutmeg.jpg" alt="Skyrah Impex whole nutmeg pack" />
+        </div>
+      </div>
+      <div class="ing-label ing-l2"><span class="planet"><img src="assets/img/products/mace.jpg" alt="Mace blades" loading="lazy"/></span><span class="ing-icon" aria-hidden="true"><svg viewBox="0 0 14 14"><circle cx="7" cy="2" r="1.6"/><circle cx="2.4" cy="10.5" r="1.6"/><circle cx="11.6" cy="10.5" r="1.6"/></svg></span><span class="lbl">Whole Spices</span><span class="desc">Nutmeg and mace with their natural oils intact.</span></div>
+      <div class="ing-label ing-l3"><span class="planet"><img src="assets/img/products/tomato-powder.jpg" alt="Tomato powder" loading="lazy"/></span><span class="ing-icon" aria-hidden="true"><svg viewBox="0 0 14 14"><circle cx="7" cy="2" r="1.6"/><circle cx="2.4" cy="10.5" r="1.6"/><circle cx="11.6" cy="10.5" r="1.6"/></svg></span><span class="lbl">Powders</span><span class="desc">Spices, fruits and vegetables, finely milled.</span></div>
+      <div class="ing-label ing-l4"><span class="planet"><img src="assets/img/products/dehydrated-okra.jpg" alt="Dehydrated okra" loading="lazy"/></span><span class="ing-icon" aria-hidden="true"><svg viewBox="0 0 14 14"><circle cx="7" cy="2" r="1.6"/><circle cx="2.4" cy="10.5" r="1.6"/><circle cx="11.6" cy="10.5" r="1.6"/></svg></span><span class="lbl">Dehydrated</span><span class="desc">Vegetables dried to keep for months.</span></div>
+      <div class="ing-label ing-l5"><span class="planet"><img src="assets/img/products/hibiscus-infusion.jpg" alt="Hibiscus infusion" loading="lazy"/></span><span class="ing-icon" aria-hidden="true"><svg viewBox="0 0 14 14"><circle cx="7" cy="2" r="1.6"/><circle cx="2.4" cy="10.5" r="1.6"/><circle cx="11.6" cy="10.5" r="1.6"/></svg></span><span class="lbl">Infusions</span><span class="desc">Herbal and spice blends for a soothing cup.</span></div>
+    </div>
+    <div class="ing-center-copy">
+      <h2 class="reveal">One wheel. Every ingredient we stand behind.</h2>
+      <p class="reveal">Whole spices, powders, dehydrated vegetables and infusions — sourced from Indian farms and left as natural as possible.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+  <div class="wrap">
+    <div class="benefit-grid">
+      <div class="benefit reveal">
+        <div class="b-num" data-count="100"><span class="val">0</span><span class="unit">%</span></div>
+        <h4>Natural Produce</h4>
+        <p>Spices, vegetables, fruits, leaves and flowers from India.</p>
+      </div>
+      <div class="benefit reveal">
+        <div class="b-num" data-count="12" id="benefitProducts"><span class="val">0</span></div>
+        <h4>Products</h4>
+        <p>Whole spices, powders, dehydrated vegetables and infusions.</p>
+      </div>
+      <div class="benefit reveal">
+        <div class="b-num" data-count="5" id="benefitRanges"><span class="val">0</span></div>
+        <h4>Product Ranges</h4>
+        <p>Something for every kitchen, café and food business.</p>
+      </div>
+      <div class="benefit reveal">
+        <div class="b-num" data-count="24"><span class="val">0</span><span class="unit">hrs</span></div>
+        <h4>Enquiry Replies</h4>
+        <p>Retail, bulk or export — we get back to you within a day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="steps">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:0;">
+      <h2 class="reveal">Ordering Is<br>Simple</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="s-index">01</div>
+        <h3>Choose</h3>
+        <p>Browse the range and pick the products you need.</p>
+        <div class="s-line"></div>
+      </div>
+      <div class="step">
+        <div class="s-index">02</div>
+        <h3>Message</h3>
+        <p>Order on WhatsApp, or send a bulk or export enquiry.</p>
+        <div class="s-line"></div>
+      </div>
+      <div class="step">
+        <div class="s-index">03</div>
+        <h3>Receive</h3>
+        <p>Packed fresh and shipped — across India or worldwide.</p>
+        <div class="s-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIFESTYLE BAND -->
+<section class="band">
+  <div class="band-bg"><img src="assets/img/band-lifestyle.jpg" alt="Bowls of natural Indian produce" /></div>
+  <h2>
+    <span class="line"><span>From Indian Soil.</span></span>
+    <span class="line"><span>To Global Soul.</span></span>
+  </h2>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">Shop by<br>Range</h2>
+    </div>
+    <div class="cat-scroll" id="catScroll"></div>
+    </div>
+  </section>
+
+<!-- TESTIMONIALS -->
+<section class="testi" id="testiSection" hidden>
+  <div class="wrap">
+    <div class="testi-card reveal">
+      <div id="testiSlides"><!-- injected from the admin panel --></div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNAL -->
+<section class="journal" id="journal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal">From the<br>Journal</h2>
+    </div>
+    <div class="journal-grid" id="journalTeaser"><!-- injected --></div>
+    <div style="text-align:center; margin-top:56px;">
+      <a href="journal.html" class="btn ghost reveal">View All Articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="contact">
+  <div class="bg"></div>
+  <h2 class="reveal">Bring <span class="accent">Goodness</span><br>Home.</h2>
+  <p class="reveal">Natural Indian produce — for your kitchen or your business.</p>
+  <a href="shop.html" class="btn reveal">Shop Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="nav-logo foot-logo"><img src="assets/img/logo.png" alt="Skyrah Impex" class="logo-img"><span class="logo-text">Skyrah <span class="logo-accent">Impex</span></span></div>
+        <p><span data-site="tagline">From Indian Soil to Global Soul</span>.</p>
+        <div class="foot-social">
+          <a href="#" data-social="instagram" aria-label="Instagram" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" data-social="facebook" aria-label="Facebook" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" data-social="linkedin" aria-label="LinkedIn" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+          <a href="#" data-social="youtube" aria-label="YouTube" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10.5 9.7 4 2.3-4 2.3Z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://wa.me/919566348350" data-site-href="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Shop</h5>
+        <a href="shop.html">All Products</a><span data-foot-cats style="display:contents"></span>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a><a href="about.html">Our Story</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h5>Help</h5>
+        <a href="contact.html">Bulk &amp; Export</a><a href="faq.html">Shipping</a><a href="faq.html">Returns</a><a href="faq.html">FAQs</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="policies.html#privacy">Privacy Policy</a><a href="policies.html#terms">Terms &amp; Conditions</a><a href="policies.html#delivery">Delivery Policy</a><a href="policies.html#returns">Return &amp; Refund Policy</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-legal">
+        <strong data-site="legalName">Skyrah Impex Private Limited</strong> &middot; <span data-site="businessLine">Import &amp; Export</span><br>
+        <span data-site="address"># 99/3/8, Ponnagar, R.Ponnapuram, Pollachi, Tamil Nadu – 642002</span><br>
+        <a href="tel:+919566348350" data-site-href="tel1" data-site="phone1">+91 9566 348 350</a><span data-site-row> &middot; <a href="tel:+918289997904" data-site-href="tel2" data-site="phone2">+91 8289 997 904</a></span> &middot; <a href="mailto:info@skyrahimpex.com" data-site-href="mailto" data-site="email">info@skyrahimpex.com</a><br>
+        <span data-site-row>FSSAI No.: <span data-site="fssai">22425557000006</span></span><span data-site-row> &middot; GSTIN: <span data-site="gstin"></span></span><span data-site-row> &middot; IEC: <span data-site="iec"></span></span>
+      </div>
+      <div>&copy; <span data-site="year">2026</span> <span data-site="legalName">Skyrah Impex Private Limited</span>. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a class="wa-btn" href="https://wa.me/919566348350" data-site-href="whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <div class="wa-pulse"></div>
+  <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3 17.4L2 22l4.7-1.2A11 11 0 1 0 20.5 3.5zM12 20.1a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.1 8.1 0 1 1 12 20.1zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.6 6.6 0 0 1-2-1.2 7.3 7.3 0 0 1-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4v-.4c0-.1-.5-1.3-.7-1.8s-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.5 11.2 11.2 0 0 0 4.4 3.9c.6.2 1 .4 1.4.5a3.3 3.3 0 0 0 1.5.1 2.5 2.5 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c-.1-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script src="assets/js/products-data.js"></script>
+<script src="assets/js/journal-data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+/* ---------- featured products (tick "Feature on home page" in the admin) ---------- */
+const featuredList = (FEATURED_SLUGS.length ? FEATURED_SLUGS : PRODUCTS.map(p=>p.slug)).map(getProductBySlug).filter(Boolean).slice(0,6);
+function productCard(p){
+  return `
+  <div class="p-card${p.inStock ? '' : ' is-out'}">
+    <a class="p-card-link" href="${productUrl(p)}">
+      <div class="p-media">
+        ${p.inStock ? '' : '<div class="p-new-tag p-out-tag">Out of stock</div>'}
+        <img src="${escHtml(resolveProductImage(p))}" alt="${escHtml(p.name)}" loading="lazy" onerror="handleImgError(this)">
+        <div class="price-badge small"><span class="pb-label">Price</span><span class="pb-amount">${formatINR(p.price)}</span></div>
+      </div>
+      <div class="p-script">${escHtml(p.cat)}</div>
+      <h3>${escHtml(p.name)}</h3>
+      <p>${escHtml(p.desc)}${p.weight ? ' &middot; ' + escHtml(p.weight) : ''}</p>
+    </a>
+    <div class="p-foot">
+      <div class="p-price real">${formatINR(p.price)} ${mrpHtml(p)}</div>
+      <a class="p-add" href="${productUrl(p)}">View <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>`;
+}
+document.getElementById('productGrid').innerHTML = featuredList.map(productCard).join('');
+
+/* ---------- shop-by-range cards (managed from the admin panel) ---------- */
+const catCount = CATEGORIES.length;
+document.getElementById('catScroll').style.setProperty('--cat-cols', catCount > 6 ? 4 : Math.max(4, catCount));
+document.getElementById('catScroll').innerHTML = CATEGORIES.map(c => `
+  <a href="${shopCatUrl(c.name)}" class="cat-card">
+    <div class="cat-bg" style="background-image:url('${encodeURI(c.img)}');background-size:cover;background-position:center"></div>
+    <div class="cat-overlay"><div class="cat-name">${escHtml(c.name)} <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+  </a>`).join('');
+
+/* ---------- live counts in the benefits strip ---------- */
+document.getElementById('benefitProducts').dataset.count = PRODUCTS.length;
+document.getElementById('benefitRanges').dataset.count = CATEGORIES.length;
+
+/* ---------- journal teaser: latest three articles ---------- */
+document.getElementById('journalTeaser').innerHTML = ARTICLES.slice(0,3).map(a => `
+  <a href="${articleUrl(a)}" class="j-card reveal">
+    <div class="j-media"><div style="background-image:url('${encodeURI(a.img)}');background-size:cover;background-position:center"></div></div>
+    <div class="j-cat">${escHtml(a.cat)}</div>
+    <h3>${escHtml(a.title)}</h3>
+    <div class="j-read">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+  </a>`).join('');
+if(!ARTICLES.length) document.getElementById('journal').hidden = true;
+gsap.utils.toArray('#journalTeaser .reveal').forEach(el=>{
+  gsap.to(el, {opacity:1, y:0, duration:1, ease:'cubic-bezier(0.16,1,0.3,1)', scrollTrigger:{trigger:el, start:'top 85%'}});
+});
+
+/* ---------- hero visual: rotating featured products ---------- */
+const heroSlides = (featuredList.length ? featuredList : PRODUCTS).slice(0, 6).map(p => ({ src: resolveProductImage(p), alt: p.name, cat: p.name }));
+const heroVisualEl = document.getElementById('heroVisual');
+heroVisualEl.innerHTML = heroSlides.map((s,i) => `<img class="hv-slide${i===0?' active':''}" src="${escHtml(s.src)}" alt="${escHtml(s.alt)}" onerror="handleImgError(this)">`).join('');
+const heroPbCatEl = document.getElementById('heroPbCat');
+let heroSlideIndex = 0;
+function showHeroSlide(i){
+  const slides = heroVisualEl.querySelectorAll('.hv-slide');
+  slides.forEach((el,idx)=> el.classList.toggle('active', idx===i));
+  heroPbCatEl.textContent = heroSlides[i].cat;
+  heroSlideIndex = i;
+}
+if(heroSlides.length){
+  heroPbCatEl.textContent = heroSlides[0].cat;
+  if(!window.reduceMotion && heroSlides.length > 1){
+    setInterval(()=> showHeroSlide((heroSlideIndex+1) % heroSlides.length), 3200);
+  }
+}
+
+/* ---------- hero entrance ---------- */
+gsap.set('#heroVisualWrap', {opacity:0, scale:0.92, y:20});
+gsap.set('#heroPriceBadge', {opacity:0, scale:0.4, rotate:20});
+gsap.set(['#heroScript','#heroTitleEl','#heroRating','#heroTesti','#heroCtas'], {opacity:0, y:26});
+const heroTl = gsap.timeline({defaults:{ease:'power3.out'}});
+heroTl
+  .to('#heroVisualWrap', {opacity:1, scale:1, y:0, duration:1, ease:'power3.out'}, 0)
+  .to('#heroPriceBadge', {opacity:1, scale:1, rotate:0, duration:0.9, ease:'back.out(1.8)'}, 0.5)
+  .to('#heroScript', {opacity:1, y:0, duration:0.7}, 0.25)
+  .to('#heroTitleEl', {opacity:1, y:0, duration:0.8}, 0.4)
+  .to('#heroRating', {opacity:1, y:0, duration:0.7}, 0.6)
+  .to('#heroTesti', {opacity:1, y:0, duration:0.7}, 0.75)
+  .to('#heroCtas', {opacity:1, y:0, duration:0.7}, 0.9);
+
+/* ---------- hero parallax on scroll ---------- */
+gsap.to('#heroVisualWrap', {
+  y: window.isMobile? -10 : -30, ease:'none',
+  scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:true}
+});
+
+/* ---------- intro mask lines ---------- */
+gsap.set('.mask-line span', {yPercent:100});
+gsap.utils.toArray('.mask-line span').forEach((el,i)=>{
+  gsap.to(el, {
+    yPercent:0, duration:0.9, ease:'cubic-bezier(0.16,1,0.3,1)', delay:i*0.08,
+    scrollTrigger:{trigger:'.intro', start:'top 70%'}
+  });
+});
+
+/* ---------- brand story image reveal ---------- */
+gsap.to('#storyClip', {
+  clipPath:'inset(0 0% 0 0)', duration:1.2, ease:'power3.inOut',
+  scrollTrigger:{trigger:'.story', start:'top 65%'}
+});
+
+/* ---------- product cards stagger ---------- */
+gsap.to('.p-card', {
+  opacity:1, y:0, scale:1, duration:0.8, stagger:0.12, ease:'cubic-bezier(0.16,1,0.3,1)',
+  scrollTrigger:{trigger:'.product-grid', start:'top 82%'}
+});
+
+/* ---------- ingredient wheel: fixed, static — no rotation/entrance animation ---------- */
+/* ---------- ingredient wheel: ambient shooting stars + twinkling dust ---------- */
+(function(){
+  const shootLayer = document.getElementById('ingShooting');
+  const starsLayer = document.querySelector('.ingredients .ing-stars');
+  if(!shootLayer || !starsLayer || window.reduceMotion) return;
+
+  const rand = (min, max) => Math.random() * (max - min) + min;
+  const frag1 = document.createDocumentFragment();
+  const shootCount = window.isMobile ? 8 : Math.round(rand(10, 15));
+  for(let i = 0; i < shootCount; i++){
+    const s = document.createElement('span');
+    s.className = 'ing-shoot';
+    s.style.setProperty('--top', rand(-4, 55).toFixed(1) + '%');
+    s.style.setProperty('--left', rand(-8, 65).toFixed(1) + '%');
+    s.style.setProperty('--trail', Math.round(rand(30, 120)) + 'px');
+    s.style.setProperty('--head', Math.round(rand(2, 5)) + 'px');
+    s.style.setProperty('--dur', rand(2, 5).toFixed(2) + 's');
+    s.style.setProperty('--delay', rand(0, 6).toFixed(2) + 's');
+    s.style.setProperty('--op', rand(0.55, 0.95).toFixed(2));
+    frag1.appendChild(s);
+  }
+  shootLayer.appendChild(frag1);
+
+  const frag2 = document.createDocumentFragment();
+  const twinkleCount = window.isMobile ? 16 : Math.round(rand(24, 40));
+  for(let i = 0; i < twinkleCount; i++){
+    const t = document.createElement('span');
+    t.className = 'ing-twinkle';
+    t.style.setProperty('--top', rand(0, 100).toFixed(1) + '%');
+    t.style.setProperty('--left', rand(0, 100).toFixed(1) + '%');
+    t.style.setProperty('--tsize', rand(1, 2.4).toFixed(1) + 'px');
+    t.style.setProperty('--dur', rand(1.8, 4.2).toFixed(2) + 's');
+    t.style.setProperty('--delay', rand(0, 5).toFixed(2) + 's');
+    t.style.setProperty('--op', rand(0.5, 0.95).toFixed(2));
+    frag2.appendChild(t);
+  }
+  starsLayer.appendChild(frag2);
+})();
+
+/* ---------- benefits counters ---------- */
+document.querySelectorAll('.b-num').forEach(el=>{
+  const target = parseInt(el.dataset.count,10);
+  const valEl = el.querySelector('.val');
+  const start = parseInt(valEl.textContent,10);
+  if(isNaN(target) || target===start) return;
+  ScrollTrigger.create({
+    trigger: el, start:'top 85%', once:true,
+    onEnter: ()=>{
+      gsap.to({v:start}, {
+        v:target, duration:1.5, ease:'power1.out',
+        onUpdate: function(){ valEl.textContent = Math.round(this.targets()[0].v); }
+      });
+    }
+  });
+});
+
+/* ---------- steps ---------- */
+gsap.utils.toArray('.step').forEach((el,i)=>{
+  ScrollTrigger.create({
+    trigger: el, start:'top 82%', once:true,
+    onEnter:()=> el.classList.add('in-view')
+  });
+  gsap.to(el, {
+    opacity:1, y:0, scale:1, duration:0.8, delay:i*0.12, ease:'cubic-bezier(0.16,1,0.3,1)',
+    scrollTrigger:{trigger:el, start:'top 85%'}
+  });
+});
+
+/* ---------- lifestyle band text ---------- */
+gsap.utils.toArray('.band h2 .line span').forEach((el,i)=>{
+  gsap.to(el, {
+    y:0, opacity:1, duration:0.9, delay:i*0.15, ease:'power3.out',
+    scrollTrigger:{trigger:'.band', start:'top 60%'}
+  });
+});
+gsap.to('.band-bg', {
+  scale:1, ease:'none',
+  scrollTrigger:{trigger:'.band', start:'top bottom', end:'bottom top', scrub:true}
+});
+
+/* ---------- testimonials (added in the admin panel; hidden when there are none) ---------- */
+(function(){
+  if(!TESTIMONIALS.length) return;
+  const section = document.getElementById('testiSection');
+  section.hidden = false;
+  document.getElementById('testiSlides').innerHTML = TESTIMONIALS.map((t,i) => `
+    <div class="testi-slide"${i ? ' style="display:none;"' : ''}>
+      ${t.rating ? '<div class="testi-stars" aria-label="' + t.rating + ' out of 5 stars">' + '★'.repeat(t.rating) + '</div>' : ''}
+      <p class="testi-quote">&ldquo;${escHtml(t.quote)}&rdquo;</p>
+      <div class="testi-name">${escHtml(t.name)}${t.place ? ' &middot; ' + escHtml(t.place) : ''}</div>
+    </div>`).join('');
+  const dotsEl = document.getElementById('testiDots');
+  dotsEl.innerHTML = TESTIMONIALS.length > 1 ? TESTIMONIALS.map((t,i) => `<button type="button" class="${i ? '' : 'active'}" data-i="${i}" aria-label="Show testimonial ${i+1}"></button>`).join('') : '';
+  const slides = document.querySelectorAll('.testi-slide');
+  const dots = dotsEl.querySelectorAll('button');
+  let activeSlide = 0;
+  function showSlide(i){
+    slides.forEach((s,idx)=> s.style.display = idx===i ? 'block':'none');
+    dots.forEach((d,idx)=> d.classList.toggle('active', idx===i));
+    activeSlide = i;
+  }
+  dots.forEach(d=> d.addEventListener('click', ()=> showSlide(parseInt(d.dataset.i,10))));
+  if(slides.length > 1) setInterval(()=> showSlide((activeSlide+1)%slides.length), 5500);
+})();
+
+/* ---------- mobile nav drawer ---------- */
+const navToggle = document.getElementById('navToggle');
+const mobileDrawer = document.getElementById('mobileDrawer');
+const mobileDrawerBackdrop = document.getElementById('mobileDrawerBackdrop');
+const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+if(navToggle && mobileDrawer && mobileDrawerBackdrop){
+  function openDrawer(){
+    mobileDrawer.classList.add('open');
+    mobileDrawerBackdrop.classList.add('open');
+    navToggle.classList.add('open');
+    navToggle.setAttribute('aria-expanded', 'true');
+    mobileDrawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer(){
+    mobileDrawer.classList.remove('open');
+    mobileDrawerBackdrop.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    mobileDrawer.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  navToggle.addEventListener('click', ()=>{
+    mobileDrawer.classList.contains('open') ? closeDrawer() : openDrawer();
+  });
+  mobileDrawerBackdrop.addEventListener('click', closeDrawer);
+  if(mobileDrawerClose) mobileDrawerClose.addEventListener('click', closeDrawer);
+  mobileDrawer.querySelectorAll('a').forEach(a=> a.addEventListener('click', closeDrawer));
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape' && mobileDrawer.classList.contains('open')) closeDrawer();
+  });
+
+  /* highlight whichever drawer row matches the current page, so the
+     "active pill" always reflects where the visitor actually is
+     (Home on the homepage, Our Story on about.html, etc.) */
+  var currentPage = location.pathname.split('/').pop() || 'index.html';
+  mobileDrawer.querySelectorAll('.mdn-item').forEach(function(item){
+    var itemHref = item.getAttribute('href');
+    if(itemHref === currentPage){ item.classList.add('is-active'); }
+  });
+}
+
+ScrollTrigger.refresh();
+</script>
+</body>
+</html>

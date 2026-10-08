@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 240" fill="none">
+  <!-- handle -->
+  <path d="M92 108C90 66 106 38 130 38s40 28 38 70" stroke="#8A5A2B" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- leafy greens peeking out behind the produce -->
+  <path d="M64 108c-6-16 2-30 16-34-2 16-6 28-16 34Z" fill="#7C8A4C"/>
+  <path d="M198 104c8-14 4-30-8-38 0 16 2 28 8 38Z" fill="#7C8A4C"/>
+  <path d="M180 96c10-8 22-8 30 0-10 6-20 6-30 0Z" fill="#9BA968"/>
+
+  <!-- bread loaf, diagonal, upper right -->
+  <g transform="rotate(24 190 90)">
+    <rect x="168" y="58" width="30" height="72" rx="14" fill="#E8C99A"/>
+    <path d="M172 74h22M170 88h26M172 102h22M174 116h18" stroke="#C7913F" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- round dinner roll, back left -->
+  <circle cx="86" cy="76" r="20" fill="#EFD9AE"/>
+  <path d="M74 72c4-6 14-6 18 0M78 82c3-4 8-4 11 0" stroke="#C7913F" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- apple -->
+  <circle cx="108" cy="98" r="24" fill="#9BA968"/>
+  <path d="M108 76c0-6 4-9 9-9" stroke="#5C6838" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="99" cy="90" rx="6" ry="9" fill="#B9C888" opacity="0.7"/>
+
+  <!-- orange / grapefruit half -->
+  <circle cx="150" cy="102" r="23" fill="#F0A63D"/>
+  <circle cx="150" cy="102" r="17" fill="#F7C873"/>
+  <g stroke="#F0A63D" stroke-width="2">
+    <path d="M150 88v28"/>
+    <path d="M137 92l26 20"/>
+    <path d="M137 112l26-20"/>
+  </g>
+
+  <!-- tomatoes cluster, nestled front-center among the produce -->
+  <circle cx="126" cy="108" r="15" fill="#D97D2E"/>
+  <circle cx="146" cy="114" r="13" fill="#C1662A"/>
+  <path d="M122 96c1-5 5-8 9-8M142 103c1-4 4-6 7-6" stroke="#5C6838" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- checkered cloth draped over the rim -->
+  <path d="M56 122h150l-12 30H70Z" fill="#F3EFE8"/>
+  <g fill="#D97D2E" opacity="0.55">
+    <rect x="60" y="122" width="13" height="13"/>
+    <rect x="86" y="122" width="13" height="13"/>
+    <rect x="112" y="122" width="13" height="13"/>
+    <rect x="138" y="122" width="13" height="13"/>
+    <rect x="164" y="122" width="13" height="13"/>
+    <rect x="190" y="122" width="13" height="13"/>
+    <rect x="73" y="135" width="13" height="13"/>
+    <rect x="99" y="135" width="13" height="13"/>
+    <rect x="125" y="135" width="13" height="13"/>
+    <rect x="151" y="135" width="13" height="13"/>
+    <rect x="177" y="135" width="13" height="13"/>
+  </g>
+
+  <!-- basket body -->
+  <path d="M50 148h158l-16 74c-1.5 9-9 15-18 15H84c-9 0-16.5-6-18-15Z" fill="#C7913F"/>
+  <g stroke="#A5722C" stroke-width="3" opacity="0.85">
+    <path d="M55 163h148"/>
+    <path d="M59 180h140"/>
+    <path d="M64 197h130"/>
+    <path d="M69 214h120"/>
+    <path d="M74 230h110"/>
+  </g>
+  <g stroke="#A5722C" stroke-width="3" opacity="0.6">
+    <path d="M72 148l-10 92"/>
+    <path d="M100 148l-5 92"/>
+    <path d="M129 148v92"/>
+    <path d="M158 148l5 92"/>
+    <path d="M186 148l10 92"/>
+  </g>
+
+  <!-- small leaf accent, front right -->
+  <path d="M206 140c11-4 20 2 22 13-11 4-20-2-22-13Z" fill="#7C8A4C"/>
+</svg>
