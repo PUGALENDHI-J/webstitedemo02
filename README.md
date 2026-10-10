@@ -1,9 +1,14 @@
 # Skyrah Impex Private Limited — website + admin panel
 
+**Website preview:** [Open the Skyrah Impex website](https://pugalendhi-j.github.io/webstitedemo02/)
+
 **From Indian Soil to Global Soul** · Import & Export · Pollachi, Tamil Nadu
 
 Static website (`public/`) + serverless API (`api/`, `lib/`) on **Vercel**, with all content, enquiries and photos in **Supabase**.
 **See `DEPLOY.md` for the step-by-step setup.**
+
+The GitHub Pages link is a static preview built from the starter content. Admin features and
+live enquiries require the full Vercel + Supabase deployment; GitHub Pages cannot run the API.
 
 | Folder | What it is |
 |---|---|
