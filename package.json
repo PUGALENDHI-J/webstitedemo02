@@ -1,12 +1,8 @@
 {
   "name": "skyrah-impex-website",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
-  "description": "Skyrah Impex Private Limited — website with admin panel",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "build": "node lib/data.js"
-  },
+  "description": "Skyrah Impex Private Limited — website + admin panel (Vercel + Supabase)",
+  "scripts": { "dev": "node server.js", "start": "node server.js" },
   "engines": { "node": ">=18" }
 }

@@ -107,22 +107,6 @@ if(nav){
   });
 }
 
-/* ---------- custom cursor (desktop) ---------- */
-const cursorDot = document.getElementById('cursorDot');
-if(cursorDot){
-  if(!isMobile){
-    window.addEventListener('mousemove', e=>{
-      gsap.to(cursorDot, {x:e.clientX, y:e.clientY, duration:0.15, ease:'power2.out'});
-    });
-    document.querySelectorAll('.p-media, .ing-wheel-holder, .j-media, .cat-card, .band, .pd-media, .post-media, [data-cursor-expand]').forEach(el=>{
-      el.addEventListener('mouseenter', ()=>cursorDot.classList.add('expand'));
-      el.addEventListener('mouseleave', ()=>cursorDot.classList.remove('expand'));
-    });
-  } else {
-    cursorDot.style.display = 'none';
-  }
-}
-
 /* ---------- generic reveal-on-scroll ---------- */
 gsap.utils.toArray('.reveal').forEach(el=>{
   gsap.to(el, {

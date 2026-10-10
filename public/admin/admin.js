@@ -6,7 +6,7 @@
   const $ = (s, r) => (r || document).querySelector(s);
   const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const site = p => '../' + String(p || '').replace(/^\/+/, '');
+  const site = p => /^https?:\/\//i.test(String(p || '')) ? String(p) : '../' + String(p || '').replace(/^\/+/, '');
   const inr = n => Number(n) ? '₹' + Number(n).toLocaleString('en-IN') : 'Ask us';
   const fmtDate = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }); };
   const fmtDateTime = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: '2-digit' }); };
@@ -331,8 +331,10 @@
         const d = ctx.getImageData(0, 0, w, h).data;
         for (let i = 3; i < d.length; i += 16) if (d[i] < 250) { alpha = true; break; }
       }
-      if (alpha) { const webp = c.toDataURL('image/webp', 0.88); return webp.startsWith('data:image/webp') ? webp : c.toDataURL('image/png'); }
-      return c.toDataURL('image/jpeg', 0.86);
+      if (alpha) { const webp = c.toDataURL('image/webp', 0.88); return webp.startsWith('data:image/webp') ? webp : c.toDataURL('image/jpeg', 0.86); }
+      let out = c.toDataURL('image/jpeg', 0.86);
+      for (let q = 0.74; out.length > 3.2e6 && q > 0.4; q -= 0.12) out = c.toDataURL('image/jpeg', q); // stay under the 4.5 MB hosting request limit
+      return out;
     } finally { URL.revokeObjectURL(url); }
   }
   async function uploadFile(file) {
@@ -1001,9 +1003,8 @@
         fInput({ name: 'director', label: 'Contact person', value: s.director, max: 80 }) +
         fInput({ name: 'directorTitle', label: 'Their title', value: s.directorTitle, max: 60, placeholder: 'e.g. Director' }) + '</div>') +
       section('Phone, WhatsApp & email', '',
-        '<div class="grid-2">' + fInput({ name: 'phone1', label: 'Primary phone', value: s.phone1, required: true, max: 30, type: 'tel', placeholder: '+91 9566 348 350' }) +
-        fInput({ name: 'phone2', label: 'Second phone', value: s.phone2, max: 30, type: 'tel' }) +
-        fInput({ name: 'whatsapp', label: 'WhatsApp ordering number', value: s.whatsapp, required: true, max: 20, inputmode: 'numeric', hint: 'Country code + number, digits only, e.g. 919566348350. All “Order on WhatsApp” buttons use this.' }) +
+        '<div class="grid-2">' + fInput({ name: 'phone1', label: 'Primary phone', value: s.phone1, required: true, max: 30, type: 'tel', placeholder: '+91 90254 48350' }) +
+        fInput({ name: 'whatsapp', label: 'WhatsApp ordering number', value: s.whatsapp, required: true, max: 20, inputmode: 'numeric', hint: 'Country code + number, digits only, e.g. 919025448350. All “Order on WhatsApp” buttons use this.' }) +
         fInput({ name: 'email', label: 'Email', value: s.email, required: true, max: 120, type: 'email' }) +
         fInput({ name: 'website', label: 'Website', value: s.website, max: 120, placeholder: 'www.skyrahimpex.com' }) +
         fInput({ name: 'hours', label: 'Business hours', value: s.hours, max: 120 }) + '</div>') +
@@ -1032,7 +1033,7 @@
       if (!validate(form)) { err.hidden = false; err.textContent = 'Please fill in the highlighted fields.'; return; }
       const d = formData(form);
       const wa = String(d.whatsapp).replace(/\D/g, '');
-      if (wa.length < 10 || wa.length > 15) { const f = $('[data-field="whatsapp"]'); f.classList.add('has-err'); $('.field-err', f).textContent = 'Enter 10–15 digits including the country code, e.g. 919566348350.'; $('#f_whatsapp').focus(); return; }
+      if (wa.length < 10 || wa.length > 15) { const f = $('[data-field="whatsapp"]'); f.classList.add('has-err'); $('.field-err', f).textContent = 'Enter 10–15 digits including the country code, e.g. 919025448350.'; $('#f_whatsapp').focus(); return; }
       let badUrl = null;
       ['instagram', 'facebook', 'linkedin', 'youtube'].forEach(k => { if (d[k] && !/^https:\/\/\S+$/i.test(d[k].trim()) && !badUrl) badUrl = k; });
       if (badUrl) { const f = $('[data-field="' + badUrl + '"]'); f.classList.add('has-err'); $('.field-err', f).textContent = 'Paste the full link, starting with https://'; $('#f_' + badUrl).focus(); return; }

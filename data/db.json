@@ -6,9 +6,9 @@
     "businessLine": "Import & Export",
     "director": "Ramesh Balakrishnan",
     "directorTitle": "Director",
-    "phone1": "+91 9566 348 350",
-    "phone2": "+91 8289 997 904",
-    "whatsapp": "919566348350",
+    "phone1": "+91 90254 48350",
+    "phone2": "",
+    "whatsapp": "919025448350",
     "email": "info@skyrahimpex.com",
     "website": "www.skyrahimpex.com",
     "address": "# 99/3/8, Ponnagar, R.Ponnapuram, Pollachi, Tamil Nadu – 642002",
@@ -65,6 +65,14 @@
       "description": "Herbal and spice blends to brew hot or iced.",
       "img": "assets/img/products/hibiscus-infusion.jpg",
       "order": 4
+    },
+    {
+      "id": "c-soaps",
+      "name": "Natural Soaps",
+      "slug": "natural-soaps",
+      "description": "Handmade small-batch soaps made with natural Indian ingredients.",
+      "img": "assets/img/products/nutmeg-soap.jpg",
+      "order": 5
     }
   ],
   "products": [
@@ -142,7 +150,9 @@
       "price": 0,
       "mrp": 0,
       "img": "assets/img/products/nutmeg-powder.jpg",
-      "gallery": [],
+      "gallery": [
+        "assets/img/products/nutmeg-powder-scene.jpg"
+      ],
       "tags": [
         "nutmeg",
         "jathikai",
@@ -417,6 +427,38 @@
       "createdAt": "2026-10-08T13:27:52.278Z",
       "updatedAt": "2026-10-08T13:27:52.278Z",
       "order": 11
+    },
+    {
+      "id": "p-nutmeg-soap",
+      "slug": "nutmeg-soap",
+      "name": "Nutmeg Soap",
+      "categoryId": "c-soaps",
+      "desc": "100% handmade small-batch soap with the warmth of nutmeg.",
+      "long": "A handmade, small-batch bar crafted with nutmeg for a gentle, warming cleanse. Its fine natural grain lightly exfoliates while leaving skin feeling fresh, soft and lightly scented with the aroma of Indian spice.",
+      "usage": "Wet the soap and work up a lather between your hands.\nMassage gently over face and body, then rinse well.\nKeep the bar dry between uses so it lasts longer.",
+      "storage": "Keep in a cool, dry place in a draining soap dish, away from direct sunlight.",
+      "ingredients": "",
+      "shelfLife": "",
+      "origin": "India",
+      "weight": "",
+      "price": 0,
+      "mrp": 0,
+      "img": "assets/img/products/nutmeg-soap.jpg",
+      "gallery": [
+        "assets/img/products/nutmeg-soap-scene.jpg"
+      ],
+      "tags": [
+        "nutmeg soap",
+        "handmade soap",
+        "natural soap",
+        "jathikai soap",
+        "skin care"
+      ],
+      "inStock": true,
+      "featured": true,
+      "createdAt": "2026-10-10T04:50:56.137894Z",
+      "updatedAt": "2026-10-10T04:50:56.137894Z",
+      "order": 12
     }
   ],
   "articles": [

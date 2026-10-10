@@ -51,15 +51,6 @@ button{font-family:inherit; cursor:pointer; border:none; background:none; color:
 .dark-section{background:var(--ink); color:var(--rice);}
 .wrap{max-width:1360px; margin:0 auto; padding:0 clamp(16px, 5vw, 80px); position:relative; z-index:2;}
 
-/* ---------- custom cursor (desktop only) ---------- */
-.cursor-dot{
-  position:fixed; top:0; left:0; width:10px; height:10px; border-radius:50%;
-  background:var(--turmeric); pointer-events:none; z-index:9999;
-  transform:translate(-50%,-50%); transition:width .3s var(--ease), height .3s var(--ease), opacity .3s;
-  mix-blend-mode:normal;
-}
-.cursor-dot.expand{width:60px; height:60px; background:rgba(201,162,74,0.35);}
-@media(hover:none){.cursor-dot{display:none;}}
 
 /* ---------- NAV ---------- */
 .nav{
@@ -1553,3 +1544,19 @@ footer{background:var(--rice-dim); color:var(--ink); padding:80px 0 30px;}
 /* "Shop by Range" cards are portrait pack photos: keep them a sensible size when scrolling sideways */
 @media(max-width:900px){ .cat-card{min-width:42vw;} }
 @media(max-width:560px){ .cat-card{min-width:68vw;} }
+
+/* ===== Fit every screen: phones, tablets, laptops, large monitors ===== */
+html{-webkit-text-size-adjust:100%; text-size-adjust:100%;}
+body{overflow-x:hidden; padding-left:env(safe-area-inset-left); padding-right:env(safe-area-inset-right);}
+img,video,svg,iframe{max-width:100%;}
+img{height:auto;}
+.p-media img,.pd-media img,.pd-thumb img,.logo-img,.cat-card img,.j-media img,.post-media img{height:100%;}
+table{display:block; max-width:100%; overflow-x:auto;}
+h1,h2,h3,p,a{overflow-wrap:break-word;}
+.product-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));}
+.wa-btn{bottom:max(18px,env(safe-area-inset-bottom));}
+@media(min-width:1025px){.product-grid{grid-template-columns:repeat(4,1fr);}.product-grid.cols-3{grid-template-columns:repeat(3,1fr);}}
+@media(min-width:561px) and (max-width:1024px){.product-grid,.product-grid.cols-3{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.product-grid,.product-grid.cols-3{grid-template-columns:1fr;}}
+@media(min-width:1600px){html{font-size:17px;}}
+@media(max-width:380px){body{font-size:15px;}.nav{padding-left:14px;padding-right:14px;}}

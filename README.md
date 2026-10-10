@@ -2,30 +2,17 @@
 
 **From Indian Soil to Global Soul** · Import & Export · Pollachi, Tamil Nadu
 
-The website shows the Skyrah Impex range (whole spices, spice powders, fruit & vegetable
-powders, dehydrated vegetables and herbal infusions). Customers order on WhatsApp or send
-an enquiry from the Contact page. Everything is managed from the admin panel at `/admin`.
+Static website (`public/`) + serverless API (`api/`, `lib/`) on **Vercel**, with all content, enquiries and photos in **Supabase**.
+**See `DEPLOY.md` for the step-by-step setup.**
 
-## Run it
-
-Needs **Node.js 18 or newer**. There are no packages to install.
-
-    node server.js
-
-- Website: http://localhost:3000
-- Admin:   http://localhost:3000/admin
-
-Use another port with `PORT=8080 node server.js`.
-
-### Admin password
-
-- The first time the server starts, the admin password is **`skyrah@2026`**
-  (or whatever you set in `ADMIN_PASSWORD` for that first start).
-- Sign in and change it straight away under **Password & backup**. The dashboard
-  shows a warning until you do.
-- Forgot it? Stop the server and start it once with
-  `RESET_ADMIN_PASSWORD=1 ADMIN_PASSWORD="new-password" node server.js`,
-  then start it normally again.
+| Folder | What it is |
+|---|---|
+| `public/` | The website and the admin panel (`public/admin/`) |
+| `api/` | Vercel function entry (all `/api/*`, sitemap.xml, robots.txt) |
+| `lib/` | API logic, validation, Supabase client, data-script generator |
+| `data/db.json` | Starter content, loaded into Supabase on first run |
+| `supabase/schema.sql` | Database + storage setup, run once |
+| `server.js` | Local development server |
 
 ## What the admin panel manages
 
@@ -46,20 +33,7 @@ product cards best.
 
 ## How it works
 
-- `data/db.json` — all content (products, categories, articles, FAQs, reviews, company details).
-- `data/enquiries.json` — contact form messages. `data/auth.json` — hashed admin password.
-- `data/backups/` — a copy of `db.json` is kept before every save (last 30).
-- Every save rebuilds `assets/js/products-data.js` and `assets/js/journal-data.js`, which the
-  pages read. You can rebuild by hand with `node lib/data.js`.
-- Uploaded photos go to `assets/uploads/`; photos that are no longer used are removed automatically.
-- The server never serves `data/`, `lib/`, `server.js` or other private files.
-
-## Hosting
-
-Host it anywhere that runs Node.js (a VPS, Render, Railway, Hostinger Node hosting, etc.)
-with a **persistent disk**, because the admin panel saves to the `data/` and `assets/uploads/`
-folders. Back up those two folders (or use *Download backup* in the admin).
-
-On plain static hosting the website still displays from the generated files, but the admin
-panel and the contact form will not work there (the form then offers to send the message on
-WhatsApp instead).
+- The pages load their product/journal data from `/api/data/products` and `/api/data/journal`, generated live from Supabase and cached for 30 seconds.
+- `/sitemap.xml` and `/robots.txt` are generated from the same data, so new products and articles appear in the sitemap automatically.
+- Admin sign-in uses a signed 12-hour token; the password is stored hashed (scrypt) in Supabase. Login and contact-form attempts are rate limited.
+- Uploaded photos go to the public Supabase Storage bucket `uploads`; photos no longer used are deleted automatically.
